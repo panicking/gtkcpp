@@ -1,0 +1,8 @@
+#include <string>
+
+static const std::string VERSION = @VERSION@;
+static const std::string GETTEXT_PACKAGE = @GETTEXT_PACKAGE@;
+static const std::string LOCALEDIR = @LOCALEDIR@;
+static const std::string PKGDATADIR = @PKGDATADIR@;
+static const std::string APPLICATION_ID = @APPLICATION_ID@;
+static const std::string PROFILE = @PROFILE@;
