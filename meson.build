@@ -35,14 +35,17 @@ incdir = include_directories('modules', 'gi', 'override', 'expected-lite')
 gtkdep = dependency('gtk+-3.0')
 glibdep = dependency('glib-2.0')
 atkdep = dependency('atk')
+soupdep = dependency('libsoup-2.4')
+webkitdep = dependency('webkit2gtk-4.0')
 
 executable('alexa', sources, 'modules/gtk/gtk.cpp',
            'modules/atk/atk.cpp',
            'modules/gio/gio.cpp',
            'modules/glib/glib.cpp',
            'modules/gobject/gobject.cpp',
+           'modules/webkit2/webkit2.cpp',
            include_directories : incdir,
-           dependencies: [gtkdep, glibdep, atkdep])
+           dependencies: [gtkdep, glibdep, atkdep, soupdep, webkitdep])
 
 summary({
     'prefix': get_option('prefix'),

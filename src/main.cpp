@@ -1,5 +1,6 @@
 #include "config.h"
 #include <gtk/gtk.hpp>
+#include <webkit2/webkit2.hpp>
 
 #include <iostream>
 #include <locale.h>
@@ -9,6 +10,7 @@ namespace GLib = gi::repository::GLib;
 namespace GObject_ = gi::repository::GObject;
 namespace Gtk = gi::repository::Gtk;
 namespace Gio = gi::repository::Gio;
+namespace Webkit = gi::repository::WebKit2;
 
 static GLib::MainLoop loop;
 
@@ -40,6 +42,14 @@ main(int argc, char **argv)
   GObject_::Object win = builder.get_object("window");
 
   auto w = gi::object_cast<Gtk::Window>(win);
+  auto scrolled_obj = builder.get_object("scrolled_webview");
+  auto scrolledView = gi::object_cast<Gtk::ScrolledWindow>(scrolled_obj);
+  auto webview = Webkit::WebView::new_();
+
+  scrolledView.add(gi::object_cast<Gtk::Widget>(webview));
+
+  webview.load_uri("https://www.amarulasolutions.com");
+  webview.set_visible(true);
 
   // TODO auto-handle arg ignore ??
   w.signal_destroy().connect([](Gtk::Widget) { Gtk::main_quit(); });
