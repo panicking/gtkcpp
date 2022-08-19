@@ -3,6 +3,7 @@
 
 #include "base.hpp"
 #include <iterator>
+#include <glib.h>
 #include <map>
 #include <vector>
 
