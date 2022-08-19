@@ -1,0 +1,3 @@
+#pragma once
+
+#define LIBSOUP_USE_UNSTABLE_REQUEST_API 1
