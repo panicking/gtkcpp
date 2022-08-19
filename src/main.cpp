@@ -18,27 +18,6 @@ const char* currentExceptionTypeName()
     return abi::__cxa_demangle(abi::__cxa_current_exception_type()->name(), 0, 0, &status);
 }
 
-class MainWindow : public Gtk::impl::WindowImpl
-{
-  typedef MainWindow self_type;
-
-public:
-  MainWindow() : Gtk::impl::WindowImpl(typeid(*this))
-  {
-    Gtk::Window &self = *(this);
-
-    auto builder = Gtk::Builder::new_();
-
-    try {
-        builder.add_from_resource("/amarula/alexa/ui/window.ui");
-    } catch (gi::repository::GLib::Error &ex) {
-        std::cerr << ex.what() << std::endl;
-    }
-
-    self.show_all();
-  }
-};
-
 int
 main(int argc, char **argv)
 {
@@ -50,12 +29,21 @@ main(int argc, char **argv)
 
   Gio::resources_register(resources);
 
-  // recommended general approach iso stack based
-  // too much vmethod calling which is not safe for plain case
-  auto win = gi::make_ref<MainWindow>();
+  auto builder = Gtk::Builder::new_();
+
+  try {
+      builder.add_from_resource("/amarula/alexa/ui/window.ui");
+  } catch (gi::repository::GLib::Error &ex) {
+      std::cerr << ex.what() << std::endl;
+  }
+
+  GObject_::Object win = builder.get_object("window");
+
+  auto w = gi::object_cast<Gtk::Window>(win);
+
   // TODO auto-handle arg ignore ??
-  win->signal_destroy().connect([](Gtk::Widget) { Gtk::main_quit(); });
-  win->show_all();
+  w.signal_destroy().connect([](Gtk::Widget) { Gtk::main_quit(); });
+  w.show_all();
 
   Gtk::main();
 }
