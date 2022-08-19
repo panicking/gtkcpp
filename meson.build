@@ -45,7 +45,8 @@ executable('alexa', sources, 'modules/gtk/gtk.cpp',
            'modules/gobject/gobject.cpp',
            'modules/webkit2/webkit2.cpp',
            include_directories : incdir,
-           dependencies: [gtkdep, glibdep, atkdep, soupdep, webkitdep])
+           dependencies: [gtkdep, glibdep, atkdep, soupdep, webkitdep],
+           install: true)
 
 summary({
     'prefix': get_option('prefix'),
