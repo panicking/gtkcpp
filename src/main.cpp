@@ -10,6 +10,7 @@ namespace GLib = gi::repository::GLib;
 namespace GObject_ = gi::repository::GObject;
 namespace Gtk = gi::repository::Gtk;
 namespace Gio = gi::repository::Gio;
+namespace GdkPixbuf_ = gi::repository::GdkPixbuf;
 namespace Webkit = gi::repository::WebKit2;
 
 static GLib::MainLoop loop;
@@ -50,6 +51,9 @@ main(int argc, char **argv)
 
   webview.load_uri("https://www.amarulasolutions.com");
   webview.set_visible(true);
+
+  GdkPixbuf_::Pixbuf icon = GdkPixbuf_::Pixbuf::new_from_resource("/amarula/alexa/icons/48x48/icon.png");
+  w.set_icon(icon);
 
   // TODO auto-handle arg ignore ??
   w.signal_destroy().connect([](Gtk::Widget) { Gtk::main_quit(); });

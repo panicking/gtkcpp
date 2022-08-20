@@ -37,6 +37,7 @@ glibdep = dependency('glib-2.0')
 atkdep = dependency('atk')
 soupdep = dependency('libsoup-2.4')
 webkitdep = dependency('webkit2gtk-4.0')
+pixbufdep = dependency('gdk-pixbuf-2.0')
 
 executable('alexa', sources, 'modules/gtk/gtk.cpp',
            'modules/atk/atk.cpp',
@@ -44,8 +45,9 @@ executable('alexa', sources, 'modules/gtk/gtk.cpp',
            'modules/glib/glib.cpp',
            'modules/gobject/gobject.cpp',
            'modules/webkit2/webkit2.cpp',
+           'modules/gdkpixbuf/gdkpixbuf.cpp',
            include_directories : incdir,
-           dependencies: [gtkdep, glibdep, atkdep, soupdep, webkitdep],
+           dependencies: [gtkdep, glibdep, atkdep, soupdep, webkitdep, soupdep, pixbufdep],
            install: true)
 
 summary({
