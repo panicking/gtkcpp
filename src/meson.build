@@ -5,7 +5,7 @@ pkgdatadir = get_option('prefix') / get_option('datadir') / meson.project_name()
 
 conf = configuration_data()
 conf.set_quoted('VERSION', '@0@@1@'.format(meson.project_version(), version_suffix))
-conf.set_quoted('GETTEXT_PACKAGE', 'amberol')
+conf.set_quoted('GETTEXT_PACKAGE', 'alexa')
 conf.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
 conf.set_quoted('PKGDATADIR', pkgdatadir)
 conf.set_quoted('APPLICATION_ID', application_id)
