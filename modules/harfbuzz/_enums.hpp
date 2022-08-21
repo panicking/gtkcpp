@@ -9,6 +9,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(aat_layout_feature_selector_t)
+#undef aat_layout_feature_selector_t
+#endif
 enum class aat_layout_feature_selector_t {
   INVALID_ = HB_AAT_LAYOUT_FEATURE_SELECTOR_INVALID,
   ALL_TYPE_FEATURES_ON_ = HB_AAT_LAYOUT_FEATURE_SELECTOR_ALL_TYPE_FEATURES_ON,
@@ -293,6 +296,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(aat_layout_feature_type_t)
+#undef aat_layout_feature_type_t
+#endif
 enum class aat_layout_feature_type_t {
   INVALID_ = HB_AAT_LAYOUT_FEATURE_TYPE_INVALID,
   ALL_TYPOGRAPHIC_ = HB_AAT_LAYOUT_FEATURE_TYPE_ALL_TYPOGRAPHIC,
@@ -366,6 +372,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(buffer_cluster_level_t)
+#undef buffer_cluster_level_t
+#endif
 enum class buffer_cluster_level_t {
   MONOTONE_GRAPHEMES_ = HB_BUFFER_CLUSTER_LEVEL_MONOTONE_GRAPHEMES,
   MONOTONE_CHARACTERS_ = HB_BUFFER_CLUSTER_LEVEL_MONOTONE_CHARACTERS,
@@ -403,6 +412,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(buffer_content_type_t)
+#undef buffer_content_type_t
+#endif
 enum class buffer_content_type_t {
   INVALID_ = HB_BUFFER_CONTENT_TYPE_INVALID,
   UNICODE_ = HB_BUFFER_CONTENT_TYPE_UNICODE,
@@ -439,6 +451,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(buffer_serialize_format_t)
+#undef buffer_serialize_format_t
+#endif
 enum class buffer_serialize_format_t {
   TEXT_ = HB_BUFFER_SERIALIZE_FORMAT_TEXT,
   JSON_ = HB_BUFFER_SERIALIZE_FORMAT_JSON,
@@ -475,6 +490,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(direction_t)
+#undef direction_t
+#endif
 enum class direction_t {
   INVALID_ = HB_DIRECTION_INVALID,
   LTR_ = HB_DIRECTION_LTR,
@@ -513,6 +531,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(memory_mode_t)
+#undef memory_mode_t
+#endif
 enum class memory_mode_t {
   DUPLICATE_ = HB_MEMORY_MODE_DUPLICATE,
   READONLY_ = HB_MEMORY_MODE_READONLY,
@@ -550,6 +571,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(ot_layout_baseline_tag_t)
+#undef ot_layout_baseline_tag_t
+#endif
 enum class ot_layout_baseline_tag_t {
   ROMAN_ = HB_OT_LAYOUT_BASELINE_TAG_ROMAN,
   HANGING_ = HB_OT_LAYOUT_BASELINE_TAG_HANGING,
@@ -590,6 +614,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(ot_layout_glyph_class_t)
+#undef ot_layout_glyph_class_t
+#endif
 enum class ot_layout_glyph_class_t {
   UNCLASSIFIED_ = HB_OT_LAYOUT_GLYPH_CLASS_UNCLASSIFIED,
   BASE_GLYPH_ = HB_OT_LAYOUT_GLYPH_CLASS_BASE_GLYPH,
@@ -628,6 +655,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(ot_math_constant_t)
+#undef ot_math_constant_t
+#endif
 enum class ot_math_constant_t {
   SCRIPT_PERCENT_SCALE_DOWN_ = HB_OT_MATH_CONSTANT_SCRIPT_PERCENT_SCALE_DOWN,
   SCRIPT_SCRIPT_PERCENT_SCALE_DOWN_ = HB_OT_MATH_CONSTANT_SCRIPT_SCRIPT_PERCENT_SCALE_DOWN,
@@ -717,6 +747,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(ot_math_kern_t)
+#undef ot_math_kern_t
+#endif
 enum class ot_math_kern_t {
   TOP_RIGHT_ = HB_OT_MATH_KERN_TOP_RIGHT,
   TOP_LEFT_ = HB_OT_MATH_KERN_TOP_LEFT,
@@ -754,6 +787,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(ot_meta_tag_t)
+#undef ot_meta_tag_t
+#endif
 enum class ot_meta_tag_t {
   DESIGN_LANGUAGES_ = HB_OT_META_TAG_DESIGN_LANGUAGES,
   SUPPORTED_LANGUAGES_ = HB_OT_META_TAG_SUPPORTED_LANGUAGES,
@@ -789,6 +825,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(ot_metrics_tag_t)
+#undef ot_metrics_tag_t
+#endif
 enum class ot_metrics_tag_t {
   HORIZONTAL_ASCENDER_ = HB_OT_METRICS_TAG_HORIZONTAL_ASCENDER,
   HORIZONTAL_DESCENDER_ = HB_OT_METRICS_TAG_HORIZONTAL_DESCENDER,
@@ -850,6 +889,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(script_t)
+#undef script_t
+#endif
 enum class script_t {
   COMMON_ = HB_SCRIPT_COMMON,
   INHERITED_ = HB_SCRIPT_INHERITED,
@@ -1041,6 +1083,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(unicode_combining_class_t)
+#undef unicode_combining_class_t
+#endif
 enum class unicode_combining_class_t {
   NOT_REORDERED_ = HB_UNICODE_COMBINING_CLASS_NOT_REORDERED,
   OVERLAY_ = HB_UNICODE_COMBINING_CLASS_OVERLAY,
@@ -1131,6 +1176,9 @@ namespace repository {
 
 namespace HarfBuzz {
 
+#if defined(unicode_general_category_t)
+#undef unicode_general_category_t
+#endif
 enum class unicode_general_category_t {
   CONTROL_ = HB_UNICODE_GENERAL_CATEGORY_CONTROL,
   FORMAT_ = HB_UNICODE_GENERAL_CATEGORY_FORMAT,

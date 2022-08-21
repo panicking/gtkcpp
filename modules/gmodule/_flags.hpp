@@ -9,6 +9,9 @@ namespace repository {
 
 namespace GModule {
 
+#if defined(ModuleFlags)
+#undef ModuleFlags
+#endif
 enum class ModuleFlags {
   LAZY_ = G_MODULE_BIND_LAZY,
   LOCAL_ = G_MODULE_BIND_LOCAL,

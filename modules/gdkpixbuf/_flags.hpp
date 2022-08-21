@@ -9,6 +9,9 @@ namespace repository {
 
 namespace GdkPixbuf {
 
+#if defined(PixbufFormatFlags)
+#undef PixbufFormatFlags
+#endif
 enum class PixbufFormatFlags {
   WRITABLE_ = GDK_PIXBUF_FORMAT_WRITABLE,
   SCALABLE_ = GDK_PIXBUF_FORMAT_SCALABLE,

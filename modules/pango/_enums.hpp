@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Alignment)
+#undef Alignment
+#endif
 enum class Alignment {
   LEFT_ = PANGO_ALIGN_LEFT,
   CENTER_ = PANGO_ALIGN_CENTER,
@@ -45,6 +48,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(AttrType)
+#undef AttrType
+#endif
 enum class AttrType {
   INVALID_ = PANGO_ATTR_INVALID,
   LANGUAGE_ = PANGO_ATTR_LANGUAGE,
@@ -116,6 +122,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(BaselineShift)
+#undef BaselineShift
+#endif
 enum class BaselineShift {
   NONE_ = PANGO_BASELINE_SHIFT_NONE,
   SUPERSCRIPT_ = PANGO_BASELINE_SHIFT_SUPERSCRIPT,
@@ -152,6 +161,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(CoverageLevel)
+#undef CoverageLevel
+#endif
 enum class CoverageLevel {
   NONE_ = PANGO_COVERAGE_NONE,
   FALLBACK_ = PANGO_COVERAGE_FALLBACK,
@@ -189,6 +201,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Direction)
+#undef Direction
+#endif
 enum class Direction {
   LTR_ = PANGO_DIRECTION_LTR,
   RTL_ = PANGO_DIRECTION_RTL,
@@ -229,6 +244,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(EllipsizeMode)
+#undef EllipsizeMode
+#endif
 enum class EllipsizeMode {
   NONE_ = PANGO_ELLIPSIZE_NONE,
   START_ = PANGO_ELLIPSIZE_START,
@@ -266,6 +284,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(FontScale)
+#undef FontScale
+#endif
 enum class FontScale {
   NONE_ = PANGO_FONT_SCALE_NONE,
   SUPERSCRIPT_ = PANGO_FONT_SCALE_SUPERSCRIPT,
@@ -303,6 +324,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Gravity)
+#undef Gravity
+#endif
 enum class Gravity {
   SOUTH_ = PANGO_GRAVITY_SOUTH,
   EAST_ = PANGO_GRAVITY_EAST,
@@ -341,6 +365,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(GravityHint)
+#undef GravityHint
+#endif
 enum class GravityHint {
   NATURAL_ = PANGO_GRAVITY_HINT_NATURAL,
   STRONG_ = PANGO_GRAVITY_HINT_STRONG,
@@ -377,6 +404,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(LayoutDeserializeError)
+#undef LayoutDeserializeError
+#endif
 enum class LayoutDeserializeError {
   INVALID_ = PANGO_LAYOUT_DESERIALIZE_INVALID,
   INVALID_VALUE_ = PANGO_LAYOUT_DESERIALIZE_INVALID_VALUE,
@@ -413,6 +443,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Overline)
+#undef Overline
+#endif
 enum class Overline {
   NONE_ = PANGO_OVERLINE_NONE,
   SINGLE_ = PANGO_OVERLINE_SINGLE,
@@ -448,6 +481,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(RenderPart)
+#undef RenderPart
+#endif
 enum class RenderPart {
   FOREGROUND_ = PANGO_RENDER_PART_FOREGROUND,
   BACKGROUND_ = PANGO_RENDER_PART_BACKGROUND,
@@ -486,6 +522,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Script)
+#undef Script
+#endif
 enum class Script {
   INVALID_CODE_ = PANGO_SCRIPT_INVALID_CODE,
   COMMON_ = PANGO_SCRIPT_COMMON,
@@ -637,6 +676,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Stretch)
+#undef Stretch
+#endif
 enum class Stretch {
   ULTRA_CONDENSED_ = PANGO_STRETCH_ULTRA_CONDENSED,
   EXTRA_CONDENSED_ = PANGO_STRETCH_EXTRA_CONDENSED,
@@ -679,6 +721,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Style)
+#undef Style
+#endif
 enum class Style {
   NORMAL_ = PANGO_STYLE_NORMAL,
   OBLIQUE_ = PANGO_STYLE_OBLIQUE,
@@ -715,6 +760,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(TabAlign)
+#undef TabAlign
+#endif
 enum class TabAlign {
   LEFT_ = PANGO_TAB_LEFT,
   RIGHT_ = PANGO_TAB_RIGHT,
@@ -752,6 +800,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(TextTransform)
+#undef TextTransform
+#endif
 enum class TextTransform {
   NONE_ = PANGO_TEXT_TRANSFORM_NONE,
   LOWERCASE_ = PANGO_TEXT_TRANSFORM_LOWERCASE,
@@ -789,6 +840,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Underline)
+#undef Underline
+#endif
 enum class Underline {
   NONE_ = PANGO_UNDERLINE_NONE,
   SINGLE_ = PANGO_UNDERLINE_SINGLE,
@@ -830,6 +884,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Variant)
+#undef Variant
+#endif
 enum class Variant {
   NORMAL_ = PANGO_VARIANT_NORMAL,
   SMALL_CAPS_ = PANGO_VARIANT_SMALL_CAPS,
@@ -870,6 +927,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(Weight)
+#undef Weight
+#endif
 enum class Weight {
   THIN_ = PANGO_WEIGHT_THIN,
   ULTRALIGHT_ = PANGO_WEIGHT_ULTRALIGHT,
@@ -915,6 +975,9 @@ namespace repository {
 
 namespace Pango {
 
+#if defined(WrapMode)
+#undef WrapMode
+#endif
 enum class WrapMode {
   WORD_ = PANGO_WRAP_WORD,
   CHAR_ = PANGO_WRAP_CHAR,

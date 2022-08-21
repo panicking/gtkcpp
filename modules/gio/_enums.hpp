@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(BusType)
+#undef BusType
+#endif
 enum class BusType {
   STARTER_ = G_BUS_TYPE_STARTER,
   NONE_ = G_BUS_TYPE_NONE,
@@ -46,6 +49,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(ConverterResult)
+#undef ConverterResult
+#endif
 enum class ConverterResult {
   ERROR_ = G_CONVERTER_ERROR,
   CONVERTED_ = G_CONVERTER_CONVERTED,
@@ -83,6 +89,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(CredentialsType)
+#undef CredentialsType
+#endif
 enum class CredentialsType {
   INVALID_ = G_CREDENTIALS_TYPE_INVALID,
   LINUX_UCRED_ = G_CREDENTIALS_TYPE_LINUX_UCRED,
@@ -124,6 +133,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(DBusError)
+#undef DBusError
+#endif
 enum class DBusError {
   FAILED_ = G_DBUS_ERROR_FAILED,
   NO_MEMORY_ = G_DBUS_ERROR_NO_MEMORY,
@@ -202,6 +214,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(DBusMessageByteOrder)
+#undef DBusMessageByteOrder
+#endif
 enum class DBusMessageByteOrder {
   BIG_ENDIAN_ = G_DBUS_MESSAGE_BYTE_ORDER_BIG_ENDIAN,
   LITTLE_ENDIAN_ = G_DBUS_MESSAGE_BYTE_ORDER_LITTLE_ENDIAN,
@@ -237,6 +252,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(DBusMessageHeaderField)
+#undef DBusMessageHeaderField
+#endif
 enum class DBusMessageHeaderField {
   INVALID_ = G_DBUS_MESSAGE_HEADER_FIELD_INVALID,
   PATH_ = G_DBUS_MESSAGE_HEADER_FIELD_PATH,
@@ -280,6 +298,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(DBusMessageType)
+#undef DBusMessageType
+#endif
 enum class DBusMessageType {
   INVALID_ = G_DBUS_MESSAGE_TYPE_INVALID,
   METHOD_CALL_ = G_DBUS_MESSAGE_TYPE_METHOD_CALL,
@@ -318,6 +339,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(DataStreamByteOrder)
+#undef DataStreamByteOrder
+#endif
 enum class DataStreamByteOrder {
   BIG_ENDIAN_ = G_DATA_STREAM_BYTE_ORDER_BIG_ENDIAN,
   LITTLE_ENDIAN_ = G_DATA_STREAM_BYTE_ORDER_LITTLE_ENDIAN,
@@ -354,6 +378,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(DataStreamNewlineType)
+#undef DataStreamNewlineType
+#endif
 enum class DataStreamNewlineType {
   LF_ = G_DATA_STREAM_NEWLINE_TYPE_LF,
   CR_ = G_DATA_STREAM_NEWLINE_TYPE_CR,
@@ -391,6 +418,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(DriveStartStopType)
+#undef DriveStartStopType
+#endif
 enum class DriveStartStopType {
   UNKNOWN_ = G_DRIVE_START_STOP_TYPE_UNKNOWN,
   SHUTDOWN_ = G_DRIVE_START_STOP_TYPE_SHUTDOWN,
@@ -429,6 +459,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(EmblemOrigin)
+#undef EmblemOrigin
+#endif
 enum class EmblemOrigin {
   UNKNOWN_ = G_EMBLEM_ORIGIN_UNKNOWN,
   DEVICE_ = G_EMBLEM_ORIGIN_DEVICE,
@@ -466,6 +499,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(FileAttributeStatus)
+#undef FileAttributeStatus
+#endif
 enum class FileAttributeStatus {
   UNSET_ = G_FILE_ATTRIBUTE_STATUS_UNSET,
   SET_ = G_FILE_ATTRIBUTE_STATUS_SET,
@@ -502,6 +538,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(FileAttributeType)
+#undef FileAttributeType
+#endif
 enum class FileAttributeType {
   INVALID_ = G_FILE_ATTRIBUTE_TYPE_INVALID,
   STRING_ = G_FILE_ATTRIBUTE_TYPE_STRING,
@@ -545,6 +584,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(FileMonitorEvent)
+#undef FileMonitorEvent
+#endif
 enum class FileMonitorEvent {
   CHANGED_ = G_FILE_MONITOR_EVENT_CHANGED,
   CHANGES_DONE_HINT_ = G_FILE_MONITOR_EVENT_CHANGES_DONE_HINT,
@@ -589,6 +631,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(FileType)
+#undef FileType
+#endif
 enum class FileType {
   UNKNOWN_ = G_FILE_TYPE_UNKNOWN,
   REGULAR_ = G_FILE_TYPE_REGULAR,
@@ -629,6 +674,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(FilesystemPreviewType)
+#undef FilesystemPreviewType
+#endif
 enum class FilesystemPreviewType {
   IF_ALWAYS_ = G_FILESYSTEM_PREVIEW_TYPE_IF_ALWAYS,
   IF_LOCAL_ = G_FILESYSTEM_PREVIEW_TYPE_IF_LOCAL,
@@ -665,6 +713,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(IOErrorEnum)
+#undef IOErrorEnum
+#endif
 enum class IOErrorEnum {
   FAILED_ = G_IO_ERROR_FAILED,
   NOT_FOUND_ = G_IO_ERROR_NOT_FOUND,
@@ -746,6 +797,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(IOModuleScopeFlags)
+#undef IOModuleScopeFlags
+#endif
 enum class IOModuleScopeFlags {
   NONE_ = G_IO_MODULE_SCOPE_NONE,
   BLOCK_DUPLICATES_ = G_IO_MODULE_SCOPE_BLOCK_DUPLICATES,
@@ -781,6 +835,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(MemoryMonitorWarningLevel)
+#undef MemoryMonitorWarningLevel
+#endif
 enum class MemoryMonitorWarningLevel {
   LOW_ = G_MEMORY_MONITOR_WARNING_LEVEL_LOW,
   MEDIUM_ = G_MEMORY_MONITOR_WARNING_LEVEL_MEDIUM,
@@ -817,6 +874,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(MountOperationResult)
+#undef MountOperationResult
+#endif
 enum class MountOperationResult {
   HANDLED_ = G_MOUNT_OPERATION_HANDLED,
   ABORTED_ = G_MOUNT_OPERATION_ABORTED,
@@ -853,6 +913,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(NetworkConnectivity)
+#undef NetworkConnectivity
+#endif
 enum class NetworkConnectivity {
   LOCAL_ = G_NETWORK_CONNECTIVITY_LOCAL,
   LIMITED_ = G_NETWORK_CONNECTIVITY_LIMITED,
@@ -890,6 +953,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(NotificationPriority)
+#undef NotificationPriority
+#endif
 enum class NotificationPriority {
   NORMAL_ = G_NOTIFICATION_PRIORITY_NORMAL,
   LOW_ = G_NOTIFICATION_PRIORITY_LOW,
@@ -927,6 +993,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(PasswordSave)
+#undef PasswordSave
+#endif
 enum class PasswordSave {
   NEVER_ = G_PASSWORD_SAVE_NEVER,
   FOR_SESSION_ = G_PASSWORD_SAVE_FOR_SESSION,
@@ -963,6 +1032,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(PollableReturn)
+#undef PollableReturn
+#endif
 enum class PollableReturn {
   FAILED_ = G_POLLABLE_RETURN_FAILED,
   OK_ = G_POLLABLE_RETURN_OK,
@@ -999,6 +1071,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(ResolverError)
+#undef ResolverError
+#endif
 enum class ResolverError {
   NOT_FOUND_ = G_RESOLVER_ERROR_NOT_FOUND,
   TEMPORARY_FAILURE_ = G_RESOLVER_ERROR_TEMPORARY_FAILURE,
@@ -1035,6 +1110,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(ResolverRecordType)
+#undef ResolverRecordType
+#endif
 enum class ResolverRecordType {
   SRV_ = G_RESOLVER_RECORD_SRV,
   MX_ = G_RESOLVER_RECORD_MX,
@@ -1073,6 +1151,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(ResourceError)
+#undef ResourceError
+#endif
 enum class ResourceError {
   NOT_FOUND_ = G_RESOURCE_ERROR_NOT_FOUND,
   INTERNAL_ = G_RESOURCE_ERROR_INTERNAL,
@@ -1108,6 +1189,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(SocketClientEvent)
+#undef SocketClientEvent
+#endif
 enum class SocketClientEvent {
   RESOLVING_ = G_SOCKET_CLIENT_RESOLVING,
   RESOLVED_ = G_SOCKET_CLIENT_RESOLVED,
@@ -1150,6 +1234,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(SocketFamily)
+#undef SocketFamily
+#endif
 enum class SocketFamily {
   INVALID_ = G_SOCKET_FAMILY_INVALID,
   UNIX_ = G_SOCKET_FAMILY_UNIX,
@@ -1187,6 +1274,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(SocketListenerEvent)
+#undef SocketListenerEvent
+#endif
 enum class SocketListenerEvent {
   BINDING_ = G_SOCKET_LISTENER_BINDING,
   BOUND_ = G_SOCKET_LISTENER_BOUND,
@@ -1224,6 +1314,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(SocketProtocol)
+#undef SocketProtocol
+#endif
 enum class SocketProtocol {
   UNKNOWN_ = G_SOCKET_PROTOCOL_UNKNOWN,
   DEFAULT_ = G_SOCKET_PROTOCOL_DEFAULT,
@@ -1262,6 +1355,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(SocketType)
+#undef SocketType
+#endif
 enum class SocketType {
   INVALID_ = G_SOCKET_TYPE_INVALID,
   STREAM_ = G_SOCKET_TYPE_STREAM,
@@ -1299,6 +1395,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsAuthenticationMode)
+#undef TlsAuthenticationMode
+#endif
 enum class TlsAuthenticationMode {
   NONE_ = G_TLS_AUTHENTICATION_NONE,
   REQUESTED_ = G_TLS_AUTHENTICATION_REQUESTED,
@@ -1335,6 +1434,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsCertificateRequestFlags)
+#undef TlsCertificateRequestFlags
+#endif
 enum class TlsCertificateRequestFlags {
   NONE_ = G_TLS_CERTIFICATE_REQUEST_NONE,
 };
@@ -1369,6 +1471,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsChannelBindingError)
+#undef TlsChannelBindingError
+#endif
 enum class TlsChannelBindingError {
   NOT_IMPLEMENTED_ = G_TLS_CHANNEL_BINDING_ERROR_NOT_IMPLEMENTED,
   INVALID_STATE_ = G_TLS_CHANNEL_BINDING_ERROR_INVALID_STATE,
@@ -1407,6 +1512,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsChannelBindingType)
+#undef TlsChannelBindingType
+#endif
 enum class TlsChannelBindingType {
   UNIQUE_ = G_TLS_CHANNEL_BINDING_TLS_UNIQUE,
   SERVER_END_POINT_ = G_TLS_CHANNEL_BINDING_TLS_SERVER_END_POINT,
@@ -1442,6 +1550,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsDatabaseLookupFlags)
+#undef TlsDatabaseLookupFlags
+#endif
 enum class TlsDatabaseLookupFlags {
   NONE_ = G_TLS_DATABASE_LOOKUP_NONE,
   KEYPAIR_ = G_TLS_DATABASE_LOOKUP_KEYPAIR,
@@ -1477,6 +1588,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsError)
+#undef TlsError
+#endif
 enum class TlsError {
   UNAVAILABLE_ = G_TLS_ERROR_UNAVAILABLE,
   MISC_ = G_TLS_ERROR_MISC,
@@ -1519,6 +1633,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsInteractionResult)
+#undef TlsInteractionResult
+#endif
 enum class TlsInteractionResult {
   UNHANDLED_ = G_TLS_INTERACTION_UNHANDLED,
   HANDLED_ = G_TLS_INTERACTION_HANDLED,
@@ -1555,6 +1672,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(TlsProtocolVersion)
+#undef TlsProtocolVersion
+#endif
 enum class TlsProtocolVersion {
   UNKNOWN_ = G_TLS_PROTOCOL_VERSION_UNKNOWN,
   SSL_3_0_ = G_TLS_PROTOCOL_VERSION_SSL_3_0,
@@ -1596,6 +1716,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(UnixSocketAddressType)
+#undef UnixSocketAddressType
+#endif
 enum class UnixSocketAddressType {
   INVALID_ = G_UNIX_SOCKET_ADDRESS_INVALID,
   ANONYMOUS_ = G_UNIX_SOCKET_ADDRESS_ANONYMOUS,
@@ -1634,6 +1757,9 @@ namespace repository {
 
 namespace Gio {
 
+#if defined(ZlibCompressorFormat)
+#undef ZlibCompressorFormat
+#endif
 enum class ZlibCompressorFormat {
   ZLIB_ = G_ZLIB_COMPRESSOR_FORMAT_ZLIB,
   GZIP_ = G_ZLIB_COMPRESSOR_FORMAT_GZIP,

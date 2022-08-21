@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Atk {
 
+#if defined(HyperlinkStateFlags)
+#undef HyperlinkStateFlags
+#endif
 enum class HyperlinkStateFlags {
   INLINE_ = ATK_HYPERLINK_IS_INLINE,
 };

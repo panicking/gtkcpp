@@ -9,6 +9,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(EditorTypingAttributes)
+#undef EditorTypingAttributes
+#endif
 enum class EditorTypingAttributes {
   NONE_ = WEBKIT_EDITOR_TYPING_ATTRIBUTE_NONE,
   BOLD_ = WEBKIT_EDITOR_TYPING_ATTRIBUTE_BOLD,
@@ -47,6 +50,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(FindOptions)
+#undef FindOptions
+#endif
 enum class FindOptions {
   NONE_ = WEBKIT_FIND_OPTIONS_NONE,
   CASE_INSENSITIVE_ = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE,
@@ -86,6 +92,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(HitTestResultContext)
+#undef HitTestResultContext
+#endif
 enum class HitTestResultContext {
   DOCUMENT_ = WEBKIT_HIT_TEST_RESULT_CONTEXT_DOCUMENT,
   LINK_ = WEBKIT_HIT_TEST_RESULT_CONTEXT_LINK,
@@ -126,6 +135,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(InputHints)
+#undef InputHints
+#endif
 enum class InputHints {
   NONE_ = WEBKIT_INPUT_HINT_NONE,
   SPELLCHECK_ = WEBKIT_INPUT_HINT_SPELLCHECK,
@@ -166,6 +178,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(SnapshotOptions)
+#undef SnapshotOptions
+#endif
 enum class SnapshotOptions {
   NONE_ = WEBKIT_SNAPSHOT_OPTIONS_NONE,
   INCLUDE_SELECTION_HIGHLIGHTING_ = WEBKIT_SNAPSHOT_OPTIONS_INCLUDE_SELECTION_HIGHLIGHTING,
@@ -202,6 +217,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(WebsiteDataTypes)
+#undef WebsiteDataTypes
+#endif
 enum class WebsiteDataTypes {
   MEMORY_CACHE_ = WEBKIT_WEBSITE_DATA_MEMORY_CACHE,
   DISK_CACHE_ = WEBKIT_WEBSITE_DATA_DISK_CACHE,

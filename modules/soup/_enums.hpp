@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(AddressFamily)
+#undef AddressFamily
+#endif
 enum class AddressFamily {
   INVALID_ = SOUP_ADDRESS_FAMILY_INVALID,
   IPV4_ = SOUP_ADDRESS_FAMILY_IPV4,
@@ -45,6 +48,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(CacheResponse)
+#undef CacheResponse
+#endif
 enum class CacheResponse {
   FRESH_ = SOUP_CACHE_RESPONSE_FRESH,
   NEEDS_VALIDATION_ = SOUP_CACHE_RESPONSE_NEEDS_VALIDATION,
@@ -81,6 +87,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(CacheType)
+#undef CacheType
+#endif
 enum class CacheType {
   SINGLE_USER_ = SOUP_CACHE_SINGLE_USER,
   SHARED_ = SOUP_CACHE_SHARED,
@@ -116,6 +125,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(ConnectionState)
+#undef ConnectionState
+#endif
 enum class ConnectionState {
   NEW_ = SOUP_CONNECTION_NEW,
   CONNECTING_ = SOUP_CONNECTION_CONNECTING,
@@ -155,6 +167,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(CookieJarAcceptPolicy)
+#undef CookieJarAcceptPolicy
+#endif
 enum class CookieJarAcceptPolicy {
   ALWAYS_ = SOUP_COOKIE_JAR_ACCEPT_ALWAYS,
   NEVER_ = SOUP_COOKIE_JAR_ACCEPT_NEVER,
@@ -192,6 +207,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(DateFormat)
+#undef DateFormat
+#endif
 enum class DateFormat {
   HTTP_ = SOUP_DATE_HTTP,
   COOKIE_ = SOUP_DATE_COOKIE,
@@ -232,6 +250,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(Encoding)
+#undef Encoding
+#endif
 enum class Encoding {
   UNRECOGNIZED_ = SOUP_ENCODING_UNRECOGNIZED,
   NONE_ = SOUP_ENCODING_NONE,
@@ -271,6 +292,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(HTTPVersion)
+#undef HTTPVersion
+#endif
 enum class HTTPVersion {
   HTTP_1_0_ = SOUP_HTTP_1_0,
   HTTP_1_1_ = SOUP_HTTP_1_1,
@@ -306,6 +330,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(KnownStatusCode)
+#undef KnownStatusCode
+#endif
 enum class KnownStatusCode {
   NONE_ = SOUP_KNOWN_STATUS_CODE_NONE,
   CANCELLED_ = SOUP_KNOWN_STATUS_CODE_CANCELLED,
@@ -402,6 +429,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(LoggerLogLevel)
+#undef LoggerLogLevel
+#endif
 enum class LoggerLogLevel {
   NONE_ = SOUP_LOGGER_LOG_NONE,
   MINIMAL_ = SOUP_LOGGER_LOG_MINIMAL,
@@ -439,6 +469,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(MemoryUse)
+#undef MemoryUse
+#endif
 enum class MemoryUse {
   STATIC_ = SOUP_MEMORY_STATIC,
   TAKE_ = SOUP_MEMORY_TAKE,
@@ -476,6 +509,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(MessageHeadersType)
+#undef MessageHeadersType
+#endif
 enum class MessageHeadersType {
   REQUEST_ = SOUP_MESSAGE_HEADERS_REQUEST,
   RESPONSE_ = SOUP_MESSAGE_HEADERS_RESPONSE,
@@ -512,6 +548,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(MessagePriority)
+#undef MessagePriority
+#endif
 enum class MessagePriority {
   VERY_LOW_ = SOUP_MESSAGE_PRIORITY_VERY_LOW,
   LOW_ = SOUP_MESSAGE_PRIORITY_LOW,
@@ -550,6 +589,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(RequestError)
+#undef RequestError
+#endif
 enum class RequestError {
   BAD_URI_ = SOUP_REQUEST_ERROR_BAD_URI,
   UNSUPPORTED_URI_SCHEME_ = SOUP_REQUEST_ERROR_UNSUPPORTED_URI_SCHEME,
@@ -587,6 +629,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(RequesterError)
+#undef RequesterError
+#endif
 enum class RequesterError {
   BAD_URI_ = SOUP_REQUESTER_ERROR_BAD_URI,
   UNSUPPORTED_URI_SCHEME_ = SOUP_REQUESTER_ERROR_UNSUPPORTED_URI_SCHEME,
@@ -622,6 +667,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(SameSitePolicy)
+#undef SameSitePolicy
+#endif
 enum class SameSitePolicy {
   NONE_ = SOUP_SAME_SITE_POLICY_NONE,
   LAX_ = SOUP_SAME_SITE_POLICY_LAX,
@@ -658,6 +706,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(SocketIOStatus)
+#undef SocketIOStatus
+#endif
 enum class SocketIOStatus {
   OK_ = SOUP_SOCKET_OK,
   WOULD_BLOCK_ = SOUP_SOCKET_WOULD_BLOCK,
@@ -695,7 +746,10 @@ namespace repository {
 
 namespace Soup {
 
-enum class GenericStatus {
+#if defined(Status)
+#undef Status
+#endif
+enum class Status {
   NONE_ = SOUP_STATUS_NONE,
   CANCELLED_ = SOUP_STATUS_CANCELLED,
   CANT_RESOLVE_ = SOUP_STATUS_CANT_RESOLVE,
@@ -772,12 +826,12 @@ namespace gi {
 
 namespace repository {
 
-template<> struct declare_ctype_of<Soup::GenericStatus>
+template<> struct declare_ctype_of<Soup::Status>
 { typedef SoupStatus type; }; 
 template<> struct declare_cpptype_of<SoupStatus>
-{ typedef Soup::GenericStatus type; }; 
+{ typedef Soup::Status type; }; 
 
-template<> struct declare_gtype_of<Soup::GenericStatus>
+template<> struct declare_gtype_of<Soup::Status>
 { static GType get_type() { return soup_status_get_type(); } };
 
 
@@ -792,6 +846,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(TLDError)
+#undef TLDError
+#endif
 enum class TLDError {
   INVALID_HOSTNAME_ = SOUP_TLD_ERROR_INVALID_HOSTNAME,
   IS_IP_ADDRESS_ = SOUP_TLD_ERROR_IS_IP_ADDRESS,
@@ -830,6 +887,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(WebsocketCloseCode)
+#undef WebsocketCloseCode
+#endif
 enum class WebsocketCloseCode {
   NORMAL_ = SOUP_WEBSOCKET_CLOSE_NORMAL,
   GOING_AWAY_ = SOUP_WEBSOCKET_CLOSE_GOING_AWAY,
@@ -875,6 +935,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(WebsocketConnectionType)
+#undef WebsocketConnectionType
+#endif
 enum class WebsocketConnectionType {
   UNKNOWN_ = SOUP_WEBSOCKET_CONNECTION_UNKNOWN,
   CLIENT_ = SOUP_WEBSOCKET_CONNECTION_CLIENT,
@@ -911,6 +974,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(WebsocketDataType)
+#undef WebsocketDataType
+#endif
 enum class WebsocketDataType {
   TEXT_ = SOUP_WEBSOCKET_DATA_TEXT,
   BINARY_ = SOUP_WEBSOCKET_DATA_BINARY,
@@ -946,6 +1012,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(WebsocketError)
+#undef WebsocketError
+#endif
 enum class WebsocketError {
   FAILED_ = SOUP_WEBSOCKET_ERROR_FAILED,
   NOT_WEBSOCKET_ = SOUP_WEBSOCKET_ERROR_NOT_WEBSOCKET,
@@ -983,6 +1052,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(WebsocketState)
+#undef WebsocketState
+#endif
 enum class WebsocketState {
   OPEN_ = SOUP_WEBSOCKET_STATE_OPEN,
   CLOSING_ = SOUP_WEBSOCKET_STATE_CLOSING,
@@ -1019,6 +1091,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(XMLRPCError)
+#undef XMLRPCError
+#endif
 enum class XMLRPCError {
   ARGUMENTS_ = SOUP_XMLRPC_ERROR_ARGUMENTS,
   RETVAL_ = SOUP_XMLRPC_ERROR_RETVAL,
@@ -1054,6 +1129,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(XMLRPCFault)
+#undef XMLRPCFault
+#endif
 enum class XMLRPCFault {
   PARSE_ERROR_NOT_WELL_FORMED_ = SOUP_XMLRPC_FAULT_PARSE_ERROR_NOT_WELL_FORMED,
   PARSE_ERROR_UNSUPPORTED_ENCODING_ = SOUP_XMLRPC_FAULT_PARSE_ERROR_UNSUPPORTED_ENCODING,

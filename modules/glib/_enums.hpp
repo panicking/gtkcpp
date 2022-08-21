@@ -9,6 +9,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(BookmarkFileError)
+#undef BookmarkFileError
+#endif
 enum class BookmarkFileError {
   INVALID_URI_ = G_BOOKMARK_FILE_ERROR_INVALID_URI,
   INVALID_VALUE_ = G_BOOKMARK_FILE_ERROR_INVALID_VALUE,
@@ -47,6 +50,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(ChecksumType)
+#undef ChecksumType
+#endif
 enum class ChecksumType {
   MD5_ = G_CHECKSUM_MD5,
   SHA1_ = G_CHECKSUM_SHA1,
@@ -82,6 +88,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(ConvertError)
+#undef ConvertError
+#endif
 enum class ConvertError {
   NO_CONVERSION_ = G_CONVERT_ERROR_NO_CONVERSION,
   ILLEGAL_SEQUENCE_ = G_CONVERT_ERROR_ILLEGAL_SEQUENCE,
@@ -120,6 +129,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(DateDMY)
+#undef DateDMY
+#endif
 enum class DateDMY {
   DAY_ = G_DATE_DAY,
   MONTH_ = G_DATE_MONTH,
@@ -153,6 +165,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(DateMonth)
+#undef DateMonth
+#endif
 enum class DateMonth {
   BAD_MONTH_ = G_DATE_BAD_MONTH,
   JANUARY_ = G_DATE_JANUARY,
@@ -196,6 +211,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(DateWeekday)
+#undef DateWeekday
+#endif
 enum class DateWeekday {
   BAD_WEEKDAY_ = G_DATE_BAD_WEEKDAY,
   MONDAY_ = G_DATE_MONDAY,
@@ -234,6 +252,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(ErrorType)
+#undef ErrorType
+#endif
 enum class ErrorType {
   UNKNOWN_ = G_ERR_UNKNOWN,
   UNEXP_EOF_ = G_ERR_UNEXP_EOF,
@@ -272,6 +293,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(FileError)
+#undef FileError
+#endif
 enum class FileError {
   EXIST_ = G_FILE_ERROR_EXIST,
   ISDIR_ = G_FILE_ERROR_ISDIR,
@@ -327,6 +351,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(IOChannelError)
+#undef IOChannelError
+#endif
 enum class IOChannelError {
   FBIG_ = G_IO_CHANNEL_ERROR_FBIG,
   INVAL_ = G_IO_CHANNEL_ERROR_INVAL,
@@ -366,6 +393,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(IOError)
+#undef IOError
+#endif
 enum class IOError {
   NONE_ = G_IO_ERROR_NONE,
   AGAIN_ = G_IO_ERROR_AGAIN,
@@ -400,6 +430,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(IOStatus)
+#undef IOStatus
+#endif
 enum class IOStatus {
   ERROR_ = G_IO_STATUS_ERROR,
   NORMAL_ = G_IO_STATUS_NORMAL,
@@ -434,6 +467,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(KeyFileError)
+#undef KeyFileError
+#endif
 enum class KeyFileError {
   UNKNOWN_ENCODING_ = G_KEY_FILE_ERROR_UNKNOWN_ENCODING,
   PARSE_ = G_KEY_FILE_ERROR_PARSE,
@@ -470,6 +506,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(LogWriterOutput)
+#undef LogWriterOutput
+#endif
 enum class LogWriterOutput {
   HANDLED_ = G_LOG_WRITER_HANDLED,
   UNHANDLED_ = G_LOG_WRITER_UNHANDLED,
@@ -502,6 +541,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(MarkupError)
+#undef MarkupError
+#endif
 enum class MarkupError {
   BAD_UTF8_ = G_MARKUP_ERROR_BAD_UTF8,
   EMPTY_ = G_MARKUP_ERROR_EMPTY,
@@ -539,6 +581,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(NormalizeMode)
+#undef NormalizeMode
+#endif
 enum class NormalizeMode {
   DEFAULT_ = G_NORMALIZE_DEFAULT,
   NFD_ = G_NORMALIZE_NFD,
@@ -577,6 +622,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(NumberParserError)
+#undef NumberParserError
+#endif
 enum class NumberParserError {
   INVALID_ = G_NUMBER_PARSER_ERROR_INVALID,
   OUT_OF_BOUNDS_ = G_NUMBER_PARSER_ERROR_OUT_OF_BOUNDS,
@@ -609,6 +657,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(OnceStatus)
+#undef OnceStatus
+#endif
 enum class OnceStatus {
   NOTCALLED_ = G_ONCE_STATUS_NOTCALLED,
   PROGRESS_ = G_ONCE_STATUS_PROGRESS,
@@ -642,6 +693,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(OptionArg)
+#undef OptionArg
+#endif
 enum class OptionArg {
   NONE_ = G_OPTION_ARG_NONE,
   STRING_ = G_OPTION_ARG_STRING,
@@ -681,6 +735,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(OptionError)
+#undef OptionError
+#endif
 enum class OptionError {
   UNKNOWN_OPTION_ = G_OPTION_ERROR_UNKNOWN_OPTION,
   BAD_VALUE_ = G_OPTION_ERROR_BAD_VALUE,
@@ -714,6 +771,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(RegexError)
+#undef RegexError
+#endif
 enum class RegexError {
   COMPILE_ = G_REGEX_ERROR_COMPILE,
   OPTIMIZE_ = G_REGEX_ERROR_OPTIMIZE,
@@ -801,6 +861,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(SeekType)
+#undef SeekType
+#endif
 enum class SeekType {
   CUR_ = G_SEEK_CUR,
   SET_ = G_SEEK_SET,
@@ -834,6 +897,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(ShellError)
+#undef ShellError
+#endif
 enum class ShellError {
   BAD_QUOTING_ = G_SHELL_ERROR_BAD_QUOTING,
   EMPTY_STRING_ = G_SHELL_ERROR_EMPTY_STRING,
@@ -867,6 +933,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(SliceConfig)
+#undef SliceConfig
+#endif
 enum class SliceConfig {
   ALWAYS_MALLOC_ = G_SLICE_CONFIG_ALWAYS_MALLOC,
   BYPASS_MAGAZINES_ = G_SLICE_CONFIG_BYPASS_MAGAZINES,
@@ -903,6 +972,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(SpawnError)
+#undef SpawnError
+#endif
 enum class SpawnError {
   FORK_ = G_SPAWN_ERROR_FORK,
   READ_ = G_SPAWN_ERROR_READ,
@@ -954,6 +1026,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(TestFileType)
+#undef TestFileType
+#endif
 enum class TestFileType {
   DIST_ = G_TEST_DIST,
   BUILT_ = G_TEST_BUILT,
@@ -986,6 +1061,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(TestLogType)
+#undef TestLogType
+#endif
 enum class TestLogType {
   NONE_ = G_TEST_LOG_NONE,
   ERROR_ = G_TEST_LOG_ERROR,
@@ -1028,6 +1106,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(TestResult)
+#undef TestResult
+#endif
 enum class TestResult {
   SUCCESS_ = G_TEST_RUN_SUCCESS,
   SKIPPED_ = G_TEST_RUN_SKIPPED,
@@ -1062,6 +1143,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(ThreadError)
+#undef ThreadError
+#endif
 enum class ThreadError {
   THREAD_ERROR_AGAIN_ = G_THREAD_ERROR_AGAIN,
 };
@@ -1093,6 +1177,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(TimeType)
+#undef TimeType
+#endif
 enum class TimeType {
   STANDARD_ = G_TIME_TYPE_STANDARD,
   DAYLIGHT_ = G_TIME_TYPE_DAYLIGHT,
@@ -1126,6 +1213,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(TokenType)
+#undef TokenType
+#endif
 enum class TokenType {
   EOF_ = G_TOKEN_EOF,
   LEFT_PAREN_ = G_TOKEN_LEFT_PAREN,
@@ -1179,6 +1269,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(TraverseType)
+#undef TraverseType
+#endif
 enum class TraverseType {
   IN_ORDER_ = G_IN_ORDER,
   PRE_ORDER_ = G_PRE_ORDER,
@@ -1213,6 +1306,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(UnicodeBreakType)
+#undef UnicodeBreakType
+#endif
 enum class UnicodeBreakType {
   MANDATORY_ = G_UNICODE_BREAK_MANDATORY,
   CARRIAGE_RETURN_ = G_UNICODE_BREAK_CARRIAGE_RETURN,
@@ -1287,6 +1383,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(UnicodeScript)
+#undef UnicodeScript
+#endif
 enum class UnicodeScript {
   INVALID_CODE_ = G_UNICODE_SCRIPT_INVALID_CODE,
   COMMON_ = G_UNICODE_SCRIPT_COMMON,
@@ -1481,6 +1580,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(UnicodeType)
+#undef UnicodeType
+#endif
 enum class UnicodeType {
   CONTROL_ = G_UNICODE_CONTROL,
   FORMAT_ = G_UNICODE_FORMAT,
@@ -1541,6 +1643,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(UriError)
+#undef UriError
+#endif
 enum class UriError {
   FAILED_ = G_URI_ERROR_FAILED,
   BAD_SCHEME_ = G_URI_ERROR_BAD_SCHEME,
@@ -1581,6 +1686,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(UserDirectory)
+#undef UserDirectory
+#endif
 enum class UserDirectory {
   DIRECTORY_DESKTOP_ = G_USER_DIRECTORY_DESKTOP,
   DIRECTORY_DOCUMENTS_ = G_USER_DIRECTORY_DOCUMENTS,
@@ -1620,6 +1728,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(VariantClass)
+#undef VariantClass
+#endif
 enum class VariantClass {
   BOOLEAN_ = G_VARIANT_CLASS_BOOLEAN,
   BYTE_ = G_VARIANT_CLASS_BYTE,
@@ -1668,6 +1779,9 @@ namespace repository {
 
 namespace GLib {
 
+#if defined(VariantParseError)
+#undef VariantParseError
+#endif
 enum class VariantParseError {
   FAILED_ = G_VARIANT_PARSE_ERROR_FAILED,
   BASIC_TYPE_EXPECTED_ = G_VARIANT_PARSE_ERROR_BASIC_TYPE_EXPECTED,

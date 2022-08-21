@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(AccelFlags)
+#undef AccelFlags
+#endif
 enum class AccelFlags {
   VISIBLE_ = GTK_ACCEL_VISIBLE,
   LOCKED_ = GTK_ACCEL_LOCKED,
@@ -45,6 +48,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(ApplicationInhibitFlags)
+#undef ApplicationInhibitFlags
+#endif
 enum class ApplicationInhibitFlags {
   LOGOUT_ = GTK_APPLICATION_INHIBIT_LOGOUT,
   SWITCH_ = GTK_APPLICATION_INHIBIT_SWITCH,
@@ -82,6 +88,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(AttachOptions)
+#undef AttachOptions
+#endif
 enum class AttachOptions {
   EXPAND_ = GTK_EXPAND,
   SHRINK_ = GTK_SHRINK,
@@ -118,6 +127,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(CalendarDisplayOptions)
+#undef CalendarDisplayOptions
+#endif
 enum class CalendarDisplayOptions {
   SHOW_HEADING_ = GTK_CALENDAR_SHOW_HEADING,
   SHOW_DAY_NAMES_ = GTK_CALENDAR_SHOW_DAY_NAMES,
@@ -156,6 +168,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(CellRendererState)
+#undef CellRendererState
+#endif
 enum class CellRendererState {
   SELECTED_ = GTK_CELL_RENDERER_SELECTED,
   PRELIT_ = GTK_CELL_RENDERER_PRELIT,
@@ -196,6 +211,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(DebugFlag)
+#undef DebugFlag
+#endif
 enum class DebugFlag {
   MISC_ = GTK_DEBUG_MISC,
   PLUGSOCKET_ = GTK_DEBUG_PLUGSOCKET,
@@ -251,6 +269,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(DestDefaults)
+#undef DestDefaults
+#endif
 enum class DestDefaults {
   MOTION_ = GTK_DEST_DEFAULT_MOTION,
   HIGHLIGHT_ = GTK_DEST_DEFAULT_HIGHLIGHT,
@@ -288,6 +309,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(DialogFlags)
+#undef DialogFlags
+#endif
 enum class DialogFlags {
   MODAL_ = GTK_DIALOG_MODAL,
   DESTROY_WITH_PARENT_ = GTK_DIALOG_DESTROY_WITH_PARENT,
@@ -324,6 +348,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(EventControllerScrollFlags)
+#undef EventControllerScrollFlags
+#endif
 enum class EventControllerScrollFlags {
   NONE_ = GTK_EVENT_CONTROLLER_SCROLL_NONE,
   VERTICAL_ = GTK_EVENT_CONTROLLER_SCROLL_VERTICAL,
@@ -363,6 +390,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(FileFilterFlags)
+#undef FileFilterFlags
+#endif
 enum class FileFilterFlags {
   FILENAME_ = GTK_FILE_FILTER_FILENAME,
   URI_ = GTK_FILE_FILTER_URI,
@@ -400,6 +430,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(FontChooserLevel)
+#undef FontChooserLevel
+#endif
 enum class FontChooserLevel {
   FAMILY_ = GTK_FONT_CHOOSER_LEVEL_FAMILY,
   STYLE_ = GTK_FONT_CHOOSER_LEVEL_STYLE,
@@ -438,6 +471,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(IconLookupFlags)
+#undef IconLookupFlags
+#endif
 enum class IconLookupFlags {
   NO_SVG_ = GTK_ICON_LOOKUP_NO_SVG,
   FORCE_SVG_ = GTK_ICON_LOOKUP_FORCE_SVG,
@@ -480,6 +516,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(InputHints)
+#undef InputHints
+#endif
 enum class InputHints {
   NONE_ = GTK_INPUT_HINT_NONE,
   SPELLCHECK_ = GTK_INPUT_HINT_SPELLCHECK,
@@ -525,6 +564,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(JunctionSides)
+#undef JunctionSides
+#endif
 enum class JunctionSides {
   NONE_ = GTK_JUNCTION_NONE,
   CORNER_TOPLEFT_ = GTK_JUNCTION_CORNER_TOPLEFT,
@@ -567,6 +609,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(PlacesOpenFlags)
+#undef PlacesOpenFlags
+#endif
 enum class PlacesOpenFlags {
   NORMAL_ = GTK_PLACES_OPEN_NORMAL,
   NEW_TAB_ = GTK_PLACES_OPEN_NEW_TAB,
@@ -603,6 +648,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(RcFlags)
+#undef RcFlags
+#endif
 enum class RcFlags {
   FG_ = GTK_RC_FG,
   BG_ = GTK_RC_BG,
@@ -640,6 +688,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(RecentFilterFlags)
+#undef RecentFilterFlags
+#endif
 enum class RecentFilterFlags {
   URI_ = GTK_RECENT_FILTER_URI,
   DISPLAY_NAME_ = GTK_RECENT_FILTER_DISPLAY_NAME,
@@ -679,6 +730,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(RegionFlags)
+#undef RegionFlags
+#endif
 enum class RegionFlags {
   EVEN_ = GTK_REGION_EVEN,
   ODD_ = GTK_REGION_ODD,
@@ -718,6 +772,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(StateFlags)
+#undef StateFlags
+#endif
 enum class StateFlags {
   NORMAL_ = GTK_STATE_FLAG_NORMAL,
   ACTIVE_ = GTK_STATE_FLAG_ACTIVE,
@@ -765,6 +822,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(StyleContextPrintFlags)
+#undef StyleContextPrintFlags
+#endif
 enum class StyleContextPrintFlags {
   NONE_ = GTK_STYLE_CONTEXT_PRINT_NONE,
   RECURSE_ = GTK_STYLE_CONTEXT_PRINT_RECURSE,
@@ -801,6 +861,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(TargetFlags)
+#undef TargetFlags
+#endif
 enum class TargetFlags {
   SAME_APP_ = GTK_TARGET_SAME_APP,
   SAME_WIDGET_ = GTK_TARGET_SAME_WIDGET,
@@ -838,6 +901,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(TextSearchFlags)
+#undef TextSearchFlags
+#endif
 enum class TextSearchFlags {
   VISIBLE_ONLY_ = GTK_TEXT_SEARCH_VISIBLE_ONLY,
   TEXT_ONLY_ = GTK_TEXT_SEARCH_TEXT_ONLY,
@@ -874,6 +940,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(ToolPaletteDragTargets)
+#undef ToolPaletteDragTargets
+#endif
 enum class ToolPaletteDragTargets {
   ITEMS_ = GTK_TOOL_PALETTE_DRAG_ITEMS,
   GROUPS_ = GTK_TOOL_PALETTE_DRAG_GROUPS,
@@ -909,6 +978,9 @@ namespace repository {
 
 namespace Gtk {
 
+#if defined(TreeModelFlags)
+#undef TreeModelFlags
+#endif
 enum class TreeModelFlags {
   ITERS_PERSIST_ = GTK_TREE_MODEL_ITERS_PERSIST,
   LIST_ONLY_ = GTK_TREE_MODEL_LIST_ONLY,

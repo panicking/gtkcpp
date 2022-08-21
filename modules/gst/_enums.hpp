@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(BufferingMode)
+#undef BufferingMode
+#endif
 enum class BufferingMode {
   STREAM_ = GST_BUFFERING_STREAM,
   DOWNLOAD_ = GST_BUFFERING_DOWNLOAD,
@@ -46,6 +49,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(BusSyncReply)
+#undef BusSyncReply
+#endif
 enum class BusSyncReply {
   DROP_ = GST_BUS_DROP,
   PASS_ = GST_BUS_PASS,
@@ -82,6 +88,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(CapsIntersectMode)
+#undef CapsIntersectMode
+#endif
 enum class CapsIntersectMode {
   ZIG_ZAG_ = GST_CAPS_INTERSECT_ZIG_ZAG,
   FIRST_ = GST_CAPS_INTERSECT_FIRST,
@@ -117,6 +126,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(ClockEntryType)
+#undef ClockEntryType
+#endif
 enum class ClockEntryType {
   SINGLE_ = GST_CLOCK_ENTRY_SINGLE,
   PERIODIC_ = GST_CLOCK_ENTRY_PERIODIC,
@@ -152,6 +164,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(ClockReturn)
+#undef ClockReturn
+#endif
 enum class ClockReturn {
   OK_ = GST_CLOCK_OK,
   EARLY_ = GST_CLOCK_EARLY,
@@ -193,6 +208,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(ClockType)
+#undef ClockType
+#endif
 enum class ClockType {
   REALTIME_ = GST_CLOCK_TYPE_REALTIME,
   MONOTONIC_ = GST_CLOCK_TYPE_MONOTONIC,
@@ -230,6 +248,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(CoreError)
+#undef CoreError
+#endif
 enum class CoreError {
   FAILED_ = GST_CORE_ERROR_FAILED,
   TOO_LAZY_ = GST_CORE_ERROR_TOO_LAZY,
@@ -278,6 +299,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(DebugColorMode)
+#undef DebugColorMode
+#endif
 enum class DebugColorMode {
   OFF_ = GST_DEBUG_COLOR_MODE_OFF,
   ON_ = GST_DEBUG_COLOR_MODE_ON,
@@ -314,6 +338,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(DebugLevel)
+#undef DebugLevel
+#endif
 enum class DebugLevel {
   NONE_ = GST_LEVEL_NONE,
   ERROR_ = GST_LEVEL_ERROR,
@@ -357,6 +384,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(EventType)
+#undef EventType
+#endif
 enum class EventType {
   UNKNOWN_ = GST_EVENT_UNKNOWN,
   FLUSH_START_ = GST_EVENT_FLUSH_START,
@@ -422,6 +452,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(FlowReturn)
+#undef FlowReturn
+#endif
 enum class FlowReturn {
   CUSTOM_SUCCESS_2_ = GST_FLOW_CUSTOM_SUCCESS_2,
   CUSTOM_SUCCESS_1_ = GST_FLOW_CUSTOM_SUCCESS_1,
@@ -468,6 +501,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(Format)
+#undef Format
+#endif
 enum class Format {
   UNDEFINED_ = GST_FORMAT_UNDEFINED,
   DEFAULT_ = GST_FORMAT_DEFAULT,
@@ -507,6 +543,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(IteratorItem)
+#undef IteratorItem
+#endif
 enum class IteratorItem {
   SKIP_ = GST_ITERATOR_ITEM_SKIP,
   PASS_ = GST_ITERATOR_ITEM_PASS,
@@ -543,6 +582,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(IteratorResult)
+#undef IteratorResult
+#endif
 enum class IteratorResult {
   DONE_ = GST_ITERATOR_DONE,
   OK_ = GST_ITERATOR_OK,
@@ -580,6 +622,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(LibraryError)
+#undef LibraryError
+#endif
 enum class LibraryError {
   FAILED_ = GST_LIBRARY_ERROR_FAILED,
   TOO_LAZY_ = GST_LIBRARY_ERROR_TOO_LAZY,
@@ -620,6 +665,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(PadDirection)
+#undef PadDirection
+#endif
 enum class PadDirection {
   UNKNOWN_ = GST_PAD_UNKNOWN,
   SRC_ = GST_PAD_SRC,
@@ -656,6 +704,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(PadLinkReturn)
+#undef PadLinkReturn
+#endif
 enum class PadLinkReturn {
   OK_ = GST_PAD_LINK_OK,
   WRONG_HIERARCHY_ = GST_PAD_LINK_WRONG_HIERARCHY,
@@ -696,6 +747,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(PadMode)
+#undef PadMode
+#endif
 enum class PadMode {
   NONE_ = GST_PAD_MODE_NONE,
   PUSH_ = GST_PAD_MODE_PUSH,
@@ -732,6 +786,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(PadPresence)
+#undef PadPresence
+#endif
 enum class PadPresence {
   ALWAYS_ = GST_PAD_ALWAYS,
   SOMETIMES_ = GST_PAD_SOMETIMES,
@@ -768,6 +825,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(PadProbeReturn)
+#undef PadProbeReturn
+#endif
 enum class PadProbeReturn {
   DROP_ = GST_PAD_PROBE_DROP,
   OK_ = GST_PAD_PROBE_OK,
@@ -806,6 +866,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(ParseError)
+#undef ParseError
+#endif
 enum class ParseError {
   SYNTAX_ = GST_PARSE_ERROR_SYNTAX,
   NO_SUCH_ELEMENT_ = GST_PARSE_ERROR_NO_SUCH_ELEMENT,
@@ -847,6 +910,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(PluginError)
+#undef PluginError
+#endif
 enum class PluginError {
   MODULE_ = GST_PLUGIN_ERROR_MODULE,
   DEPENDENCIES_ = GST_PLUGIN_ERROR_DEPENDENCIES,
@@ -883,6 +949,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(ProgressType)
+#undef ProgressType
+#endif
 enum class ProgressType {
   START_ = GST_PROGRESS_TYPE_START,
   CONTINUE_ = GST_PROGRESS_TYPE_CONTINUE,
@@ -921,6 +990,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(PromiseResult)
+#undef PromiseResult
+#endif
 enum class PromiseResult {
   PENDING_ = GST_PROMISE_RESULT_PENDING,
   INTERRUPTED_ = GST_PROMISE_RESULT_INTERRUPTED,
@@ -958,6 +1030,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(QOSType)
+#undef QOSType
+#endif
 enum class QOSType {
   OVERFLOW_ = GST_QOS_TYPE_OVERFLOW,
   UNDERFLOW_ = GST_QOS_TYPE_UNDERFLOW,
@@ -994,6 +1069,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(QueryType)
+#undef QueryType
+#endif
 enum class QueryType {
   UNKNOWN_ = GST_QUERY_UNKNOWN,
   POSITION_ = GST_QUERY_POSITION,
@@ -1047,6 +1125,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(Rank)
+#undef Rank
+#endif
 enum class Rank {
   NONE_ = GST_RANK_NONE,
   MARGINAL_ = GST_RANK_MARGINAL,
@@ -1084,6 +1165,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(ResourceError)
+#undef ResourceError
+#endif
 enum class ResourceError {
   FAILED_ = GST_RESOURCE_ERROR_FAILED,
   TOO_LAZY_ = GST_RESOURCE_ERROR_TOO_LAZY,
@@ -1133,6 +1217,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(SearchMode)
+#undef SearchMode
+#endif
 enum class SearchMode {
   EXACT_ = GST_SEARCH_MODE_EXACT,
   BEFORE_ = GST_SEARCH_MODE_BEFORE,
@@ -1169,6 +1256,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(SeekType)
+#undef SeekType
+#endif
 enum class SeekType {
   NONE_ = GST_SEEK_TYPE_NONE,
   SET_ = GST_SEEK_TYPE_SET,
@@ -1205,6 +1295,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(State)
+#undef State
+#endif
 enum class State {
   VOID_PENDING_ = GST_STATE_VOID_PENDING,
   NULL_ = GST_STATE_NULL,
@@ -1243,6 +1336,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(StateChange)
+#undef StateChange
+#endif
 enum class StateChange {
   NULL_TO_READY_ = GST_STATE_CHANGE_NULL_TO_READY,
   READY_TO_PAUSED_ = GST_STATE_CHANGE_READY_TO_PAUSED,
@@ -1286,6 +1382,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(StateChangeReturn)
+#undef StateChangeReturn
+#endif
 enum class StateChangeReturn {
   FAILURE_ = GST_STATE_CHANGE_FAILURE,
   SUCCESS_ = GST_STATE_CHANGE_SUCCESS,
@@ -1323,6 +1422,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(StreamError)
+#undef StreamError
+#endif
 enum class StreamError {
   FAILED_ = GST_STREAM_ERROR_FAILED,
   TOO_LAZY_ = GST_STREAM_ERROR_TOO_LAZY,
@@ -1370,6 +1472,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(StreamStatusType)
+#undef StreamStatusType
+#endif
 enum class StreamStatusType {
   CREATE_ = GST_STREAM_STATUS_TYPE_CREATE,
   ENTER_ = GST_STREAM_STATUS_TYPE_ENTER,
@@ -1410,6 +1515,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(StructureChangeType)
+#undef StructureChangeType
+#endif
 enum class StructureChangeType {
   LINK_ = GST_STRUCTURE_CHANGE_TYPE_PAD_LINK,
   UNLINK_ = GST_STRUCTURE_CHANGE_TYPE_PAD_UNLINK,
@@ -1445,6 +1553,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TagFlag)
+#undef TagFlag
+#endif
 enum class TagFlag {
   UNDEFINED_ = GST_TAG_FLAG_UNDEFINED,
   META_ = GST_TAG_FLAG_META,
@@ -1483,6 +1594,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TagMergeMode)
+#undef TagMergeMode
+#endif
 enum class TagMergeMode {
   UNDEFINED_ = GST_TAG_MERGE_UNDEFINED,
   REPLACE_ALL_ = GST_TAG_MERGE_REPLACE_ALL,
@@ -1524,6 +1638,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TagScope)
+#undef TagScope
+#endif
 enum class TagScope {
   STREAM_ = GST_TAG_SCOPE_STREAM,
   GLOBAL_ = GST_TAG_SCOPE_GLOBAL,
@@ -1559,6 +1676,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TaskState)
+#undef TaskState
+#endif
 enum class TaskState {
   STARTED_ = GST_TASK_STARTED,
   STOPPED_ = GST_TASK_STOPPED,
@@ -1595,6 +1715,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TocEntryType)
+#undef TocEntryType
+#endif
 enum class TocEntryType {
   ANGLE_ = GST_TOC_ENTRY_TYPE_ANGLE,
   VERSION_ = GST_TOC_ENTRY_TYPE_VERSION,
@@ -1635,6 +1758,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TocLoopType)
+#undef TocLoopType
+#endif
 enum class TocLoopType {
   NONE_ = GST_TOC_LOOP_NONE,
   FORWARD_ = GST_TOC_LOOP_FORWARD,
@@ -1672,6 +1798,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TocScope)
+#undef TocScope
+#endif
 enum class TocScope {
   GLOBAL_ = GST_TOC_SCOPE_GLOBAL,
   CURRENT_ = GST_TOC_SCOPE_CURRENT,
@@ -1707,6 +1836,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TracerValueScope)
+#undef TracerValueScope
+#endif
 enum class TracerValueScope {
   PROCESS_ = GST_TRACER_VALUE_SCOPE_PROCESS,
   THREAD_ = GST_TRACER_VALUE_SCOPE_THREAD,
@@ -1744,6 +1876,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(TypeFindProbability)
+#undef TypeFindProbability
+#endif
 enum class TypeFindProbability {
   NONE_ = GST_TYPE_FIND_NONE,
   MINIMUM_ = GST_TYPE_FIND_MINIMUM,
@@ -1783,6 +1918,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(URIError)
+#undef URIError
+#endif
 enum class URIError {
   UNSUPPORTED_PROTOCOL_ = GST_URI_ERROR_UNSUPPORTED_PROTOCOL,
   BAD_URI_ = GST_URI_ERROR_BAD_URI,
@@ -1820,6 +1958,9 @@ namespace repository {
 
 namespace Gst {
 
+#if defined(URIType)
+#undef URIType
+#endif
 enum class URIType {
   UNKNOWN_ = GST_URI_UNKNOWN,
   SINK_ = GST_URI_SINK,

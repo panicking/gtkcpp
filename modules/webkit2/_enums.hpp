@@ -9,6 +9,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(AuthenticationScheme)
+#undef AuthenticationScheme
+#endif
 enum class AuthenticationScheme {
   DEFAULT_ = WEBKIT_AUTHENTICATION_SCHEME_DEFAULT,
   HTTP_BASIC_ = WEBKIT_AUTHENTICATION_SCHEME_HTTP_BASIC,
@@ -52,6 +55,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(AutomationBrowsingContextPresentation)
+#undef AutomationBrowsingContextPresentation
+#endif
 enum class AutomationBrowsingContextPresentation {
   WINDOW_ = WEBKIT_AUTOMATION_BROWSING_CONTEXT_PRESENTATION_WINDOW,
   TAB_ = WEBKIT_AUTOMATION_BROWSING_CONTEXT_PRESENTATION_TAB,
@@ -87,6 +93,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(AutoplayPolicy)
+#undef AutoplayPolicy
+#endif
 enum class AutoplayPolicy {
   ALLOW_ = WEBKIT_AUTOPLAY_ALLOW,
   ALLOW_WITHOUT_SOUND_ = WEBKIT_AUTOPLAY_ALLOW_WITHOUT_SOUND,
@@ -123,6 +132,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(CacheModel)
+#undef CacheModel
+#endif
 enum class CacheModel {
   DOCUMENT_VIEWER_ = WEBKIT_CACHE_MODEL_DOCUMENT_VIEWER,
   WEB_BROWSER_ = WEBKIT_CACHE_MODEL_WEB_BROWSER,
@@ -159,6 +171,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(ContextMenuAction)
+#undef ContextMenuAction
+#endif
 enum class ContextMenuAction {
   NO_ACTION_ = WEBKIT_CONTEXT_MENU_ACTION_NO_ACTION,
   OPEN_LINK_ = WEBKIT_CONTEXT_MENU_ACTION_OPEN_LINK,
@@ -239,6 +254,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(CookieAcceptPolicy)
+#undef CookieAcceptPolicy
+#endif
 enum class CookieAcceptPolicy {
   ALWAYS_ = WEBKIT_COOKIE_POLICY_ACCEPT_ALWAYS,
   NEVER_ = WEBKIT_COOKIE_POLICY_ACCEPT_NEVER,
@@ -275,6 +293,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(CookiePersistentStorage)
+#undef CookiePersistentStorage
+#endif
 enum class CookiePersistentStorage {
   TEXT_ = WEBKIT_COOKIE_PERSISTENT_STORAGE_TEXT,
   SQLITE_ = WEBKIT_COOKIE_PERSISTENT_STORAGE_SQLITE,
@@ -310,6 +331,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(CredentialPersistence)
+#undef CredentialPersistence
+#endif
 enum class CredentialPersistence {
   NONE_ = WEBKIT_CREDENTIAL_PERSISTENCE_NONE,
   FOR_SESSION_ = WEBKIT_CREDENTIAL_PERSISTENCE_FOR_SESSION,
@@ -346,6 +370,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(DownloadError)
+#undef DownloadError
+#endif
 enum class DownloadError {
   NETWORK_ = WEBKIT_DOWNLOAD_ERROR_NETWORK,
   CANCELLED_BY_USER_ = WEBKIT_DOWNLOAD_ERROR_CANCELLED_BY_USER,
@@ -382,6 +409,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(FaviconDatabaseError)
+#undef FaviconDatabaseError
+#endif
 enum class FaviconDatabaseError {
   NOT_INITIALIZED_ = WEBKIT_FAVICON_DATABASE_ERROR_NOT_INITIALIZED,
   FAVICON_NOT_FOUND_ = WEBKIT_FAVICON_DATABASE_ERROR_FAVICON_NOT_FOUND,
@@ -418,6 +448,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(HardwareAccelerationPolicy)
+#undef HardwareAccelerationPolicy
+#endif
 enum class HardwareAccelerationPolicy {
   ON_DEMAND_ = WEBKIT_HARDWARE_ACCELERATION_POLICY_ON_DEMAND,
   ALWAYS_ = WEBKIT_HARDWARE_ACCELERATION_POLICY_ALWAYS,
@@ -454,6 +487,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(InputPurpose)
+#undef InputPurpose
+#endif
 enum class InputPurpose {
   FREE_FORM_ = WEBKIT_INPUT_PURPOSE_FREE_FORM,
   DIGITS_ = WEBKIT_INPUT_PURPOSE_DIGITS,
@@ -494,6 +530,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(InsecureContentEvent)
+#undef InsecureContentEvent
+#endif
 enum class InsecureContentEvent {
   RUN_ = WEBKIT_INSECURE_CONTENT_RUN,
   DISPLAYED_ = WEBKIT_INSECURE_CONTENT_DISPLAYED,
@@ -529,6 +568,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(JavascriptError)
+#undef JavascriptError
+#endif
 enum class JavascriptError {
   FAILED_ = WEBKIT_JAVASCRIPT_ERROR_SCRIPT_FAILED,
 };
@@ -563,6 +605,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(LoadEvent)
+#undef LoadEvent
+#endif
 enum class LoadEvent {
   STARTED_ = WEBKIT_LOAD_STARTED,
   REDIRECTED_ = WEBKIT_LOAD_REDIRECTED,
@@ -600,6 +645,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(MediaCaptureState)
+#undef MediaCaptureState
+#endif
 enum class MediaCaptureState {
   NONE_ = WEBKIT_MEDIA_CAPTURE_STATE_NONE,
   ACTIVE_ = WEBKIT_MEDIA_CAPTURE_STATE_ACTIVE,
@@ -636,6 +684,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(NavigationType)
+#undef NavigationType
+#endif
 enum class NavigationType {
   LINK_CLICKED_ = WEBKIT_NAVIGATION_TYPE_LINK_CLICKED,
   FORM_SUBMITTED_ = WEBKIT_NAVIGATION_TYPE_FORM_SUBMITTED,
@@ -675,6 +726,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(NetworkError)
+#undef NetworkError
+#endif
 enum class NetworkError {
   FAILED_ = WEBKIT_NETWORK_ERROR_FAILED,
   TRANSPORT_ = WEBKIT_NETWORK_ERROR_TRANSPORT,
@@ -713,6 +767,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(NetworkProxyMode)
+#undef NetworkProxyMode
+#endif
 enum class NetworkProxyMode {
   DEFAULT_ = WEBKIT_NETWORK_PROXY_MODE_DEFAULT,
   NO_PROXY_ = WEBKIT_NETWORK_PROXY_MODE_NO_PROXY,
@@ -749,6 +806,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(PluginError)
+#undef PluginError
+#endif
 enum class PluginError {
   FAILED_ = WEBKIT_PLUGIN_ERROR_FAILED,
   CANNOT_FIND_PLUGIN_ = WEBKIT_PLUGIN_ERROR_CANNOT_FIND_PLUGIN,
@@ -788,6 +848,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(PolicyDecisionType)
+#undef PolicyDecisionType
+#endif
 enum class PolicyDecisionType {
   NAVIGATION_ACTION_ = WEBKIT_POLICY_DECISION_TYPE_NAVIGATION_ACTION,
   NEW_WINDOW_ACTION_ = WEBKIT_POLICY_DECISION_TYPE_NEW_WINDOW_ACTION,
@@ -824,6 +887,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(PolicyError)
+#undef PolicyError
+#endif
 enum class PolicyError {
   FAILED_ = WEBKIT_POLICY_ERROR_FAILED,
   CANNOT_SHOW_MIME_TYPE_ = WEBKIT_POLICY_ERROR_CANNOT_SHOW_MIME_TYPE,
@@ -862,6 +928,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(PrintError)
+#undef PrintError
+#endif
 enum class PrintError {
   GENERAL_ = WEBKIT_PRINT_ERROR_GENERAL,
   PRINTER_NOT_FOUND_ = WEBKIT_PRINT_ERROR_PRINTER_NOT_FOUND,
@@ -898,6 +967,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(PrintOperationResponse)
+#undef PrintOperationResponse
+#endif
 enum class PrintOperationResponse {
   PRINT_ = WEBKIT_PRINT_OPERATION_RESPONSE_PRINT,
   CANCEL_ = WEBKIT_PRINT_OPERATION_RESPONSE_CANCEL,
@@ -933,6 +1005,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(ProcessModel)
+#undef ProcessModel
+#endif
 enum class ProcessModel {
   SHARED_SECONDARY_PROCESS_ = WEBKIT_PROCESS_MODEL_SHARED_SECONDARY_PROCESS,
   MULTIPLE_SECONDARY_PROCESSES_ = WEBKIT_PROCESS_MODEL_MULTIPLE_SECONDARY_PROCESSES,
@@ -968,6 +1043,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(SaveMode)
+#undef SaveMode
+#endif
 enum class SaveMode {
   MHTML_ = WEBKIT_SAVE_MODE_MHTML,
 };
@@ -1002,6 +1080,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(ScriptDialogType)
+#undef ScriptDialogType
+#endif
 enum class ScriptDialogType {
   ALERT_ = WEBKIT_SCRIPT_DIALOG_ALERT,
   CONFIRM_ = WEBKIT_SCRIPT_DIALOG_CONFIRM,
@@ -1039,6 +1120,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(SnapshotError)
+#undef SnapshotError
+#endif
 enum class SnapshotError {
   CREATE_ = WEBKIT_SNAPSHOT_ERROR_FAILED_TO_CREATE,
 };
@@ -1073,6 +1157,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(SnapshotRegion)
+#undef SnapshotRegion
+#endif
 enum class SnapshotRegion {
   VISIBLE_ = WEBKIT_SNAPSHOT_REGION_VISIBLE,
   FULL_DOCUMENT_ = WEBKIT_SNAPSHOT_REGION_FULL_DOCUMENT,
@@ -1108,6 +1195,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(TLSErrorsPolicy)
+#undef TLSErrorsPolicy
+#endif
 enum class TLSErrorsPolicy {
   IGNORE_ = WEBKIT_TLS_ERRORS_POLICY_IGNORE,
   FAIL_ = WEBKIT_TLS_ERRORS_POLICY_FAIL,
@@ -1143,6 +1233,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(UserContentFilterError)
+#undef UserContentFilterError
+#endif
 enum class UserContentFilterError {
   INVALID_SOURCE_ = WEBKIT_USER_CONTENT_FILTER_ERROR_INVALID_SOURCE,
   NOT_FOUND_ = WEBKIT_USER_CONTENT_FILTER_ERROR_NOT_FOUND,
@@ -1178,6 +1271,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(UserContentInjectedFrames)
+#undef UserContentInjectedFrames
+#endif
 enum class UserContentInjectedFrames {
   ALL_FRAMES_ = WEBKIT_USER_CONTENT_INJECT_ALL_FRAMES,
   TOP_FRAME_ = WEBKIT_USER_CONTENT_INJECT_TOP_FRAME,
@@ -1213,6 +1309,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(UserMessageError)
+#undef UserMessageError
+#endif
 enum class UserMessageError {
   MESSAGE_ = WEBKIT_USER_MESSAGE_UNHANDLED_MESSAGE,
 };
@@ -1247,6 +1346,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(UserScriptInjectionTime)
+#undef UserScriptInjectionTime
+#endif
 enum class UserScriptInjectionTime {
   START_ = WEBKIT_USER_SCRIPT_INJECT_AT_DOCUMENT_START,
   END_ = WEBKIT_USER_SCRIPT_INJECT_AT_DOCUMENT_END,
@@ -1282,6 +1384,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(UserStyleLevel)
+#undef UserStyleLevel
+#endif
 enum class UserStyleLevel {
   USER_ = WEBKIT_USER_STYLE_LEVEL_USER,
   AUTHOR_ = WEBKIT_USER_STYLE_LEVEL_AUTHOR,
@@ -1317,6 +1422,9 @@ namespace repository {
 
 namespace WebKit2 {
 
+#if defined(WebProcessTerminationReason)
+#undef WebProcessTerminationReason
+#endif
 enum class WebProcessTerminationReason {
   CRASHED_ = WEBKIT_WEB_PROCESS_CRASHED,
   EXCEEDED_MEMORY_LIMIT_ = WEBKIT_WEB_PROCESS_EXCEEDED_MEMORY_LIMIT,

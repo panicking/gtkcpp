@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(AnchorHints)
+#undef AnchorHints
+#endif
 enum class AnchorHints {
   FLIP_X_ = GDK_ANCHOR_FLIP_X,
   FLIP_Y_ = GDK_ANCHOR_FLIP_Y,
@@ -51,6 +54,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(AxisFlags)
+#undef AxisFlags
+#endif
 enum class AxisFlags {
   X_ = GDK_AXIS_FLAG_X,
   Y_ = GDK_AXIS_FLAG_Y,
@@ -93,6 +99,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(DragAction)
+#undef DragAction
+#endif
 enum class DragAction {
   DEFAULT_ = GDK_ACTION_DEFAULT,
   COPY_ = GDK_ACTION_COPY,
@@ -132,6 +141,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(EventMask)
+#undef EventMask
+#endif
 enum class EventMask {
   EXPOSURE_MASK_ = GDK_EXPOSURE_MASK,
   POINTER_MOTION_MASK_ = GDK_POINTER_MOTION_MASK,
@@ -191,6 +203,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(FrameClockPhase)
+#undef FrameClockPhase
+#endif
 enum class FrameClockPhase {
   NONE_ = GDK_FRAME_CLOCK_PHASE_NONE,
   FLUSH_EVENTS_ = GDK_FRAME_CLOCK_PHASE_FLUSH_EVENTS,
@@ -232,6 +247,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(ModifierType)
+#undef ModifierType
+#endif
 enum class ModifierType {
   SHIFT_MASK_ = GDK_SHIFT_MASK,
   LOCK_MASK_ = GDK_LOCK_MASK,
@@ -297,6 +315,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(SeatCapabilities)
+#undef SeatCapabilities
+#endif
 enum class SeatCapabilities {
   NONE_ = GDK_SEAT_CAPABILITY_NONE,
   POINTER_ = GDK_SEAT_CAPABILITY_POINTER,
@@ -337,6 +358,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(WMDecoration)
+#undef WMDecoration
+#endif
 enum class WMDecoration {
   ALL_ = GDK_DECOR_ALL,
   BORDER_ = GDK_DECOR_BORDER,
@@ -377,6 +401,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(WMFunction)
+#undef WMFunction
+#endif
 enum class WMFunction {
   ALL_ = GDK_FUNC_ALL,
   RESIZE_ = GDK_FUNC_RESIZE,
@@ -416,6 +443,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(WindowAttributesType)
+#undef WindowAttributesType
+#endif
 enum class WindowAttributesType {
   TITLE_ = GDK_WA_TITLE,
   X_ = GDK_WA_X,
@@ -457,6 +487,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(WindowHints)
+#undef WindowHints
+#endif
 enum class WindowHints {
   POS_ = GDK_HINT_POS,
   MIN_SIZE_ = GDK_HINT_MIN_SIZE,
@@ -499,6 +532,9 @@ namespace repository {
 
 namespace Gdk {
 
+#if defined(WindowState)
+#undef WindowState
+#endif
 enum class WindowState {
   WITHDRAWN_ = GDK_WINDOW_STATE_WITHDRAWN,
   ICONIFIED_ = GDK_WINDOW_STATE_ICONIFIED,

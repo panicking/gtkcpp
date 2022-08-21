@@ -9,6 +9,9 @@ namespace repository {
 
 namespace JavaScriptCore {
 
+#if defined(CheckSyntaxMode)
+#undef CheckSyntaxMode
+#endif
 enum class CheckSyntaxMode {
   SCRIPT_ = JSC_CHECK_SYNTAX_MODE_SCRIPT,
   MODULE_ = JSC_CHECK_SYNTAX_MODE_MODULE,
@@ -41,6 +44,9 @@ namespace repository {
 
 namespace JavaScriptCore {
 
+#if defined(CheckSyntaxResult)
+#undef CheckSyntaxResult
+#endif
 enum class CheckSyntaxResult {
   SUCCESS_ = JSC_CHECK_SYNTAX_RESULT_SUCCESS,
   RECOVERABLE_ERROR_ = JSC_CHECK_SYNTAX_RESULT_RECOVERABLE_ERROR,
@@ -77,6 +83,9 @@ namespace repository {
 
 namespace JavaScriptCore {
 
+#if defined(OptionType)
+#undef OptionType
+#endif
 enum class OptionType {
   BOOLEAN_ = JSC_OPTION_BOOLEAN,
   INT_ = JSC_OPTION_INT,

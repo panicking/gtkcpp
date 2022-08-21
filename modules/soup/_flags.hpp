@@ -9,6 +9,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(Cacheability)
+#undef Cacheability
+#endif
 enum class Cacheability {
   CACHEABLE_ = SOUP_CACHE_CACHEABLE,
   UNCACHEABLE_ = SOUP_CACHE_UNCACHEABLE,
@@ -46,6 +49,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(Expectation)
+#undef Expectation
+#endif
 enum class Expectation {
   UNRECOGNIZED_ = SOUP_EXPECTATION_UNRECOGNIZED,
   CONTINUE_ = SOUP_EXPECTATION_CONTINUE,
@@ -81,6 +87,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(MessageFlags)
+#undef MessageFlags
+#endif
 enum class MessageFlags {
   NO_REDIRECT_ = SOUP_MESSAGE_NO_REDIRECT,
   CAN_REBUILD_ = SOUP_MESSAGE_CAN_REBUILD,
@@ -123,6 +132,9 @@ namespace repository {
 
 namespace Soup {
 
+#if defined(ServerListenOptions)
+#undef ServerListenOptions
+#endif
 enum class ServerListenOptions {
   HTTPS_ = SOUP_SERVER_LISTEN_HTTPS,
   IPV4_ONLY_ = SOUP_SERVER_LISTEN_IPV4_ONLY,
