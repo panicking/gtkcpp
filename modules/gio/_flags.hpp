@@ -9,9 +9,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(AppInfoCreateFlags)
-#undef AppInfoCreateFlags
-#endif
 enum class AppInfoCreateFlags {
   NONE_ = G_APP_INFO_CREATE_NONE,
   NEEDS_TERMINAL_ = G_APP_INFO_CREATE_NEEDS_TERMINAL,
@@ -49,9 +46,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(ApplicationFlags)
-#undef ApplicationFlags
-#endif
 enum class ApplicationFlags {
   FLAGS_NONE_ = G_APPLICATION_FLAGS_NONE,
   IS_SERVICE_ = G_APPLICATION_IS_SERVICE,
@@ -95,9 +89,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(AskPasswordFlags)
-#undef AskPasswordFlags
-#endif
 enum class AskPasswordFlags {
   NEED_PASSWORD_ = G_ASK_PASSWORD_NEED_PASSWORD,
   NEED_USERNAME_ = G_ASK_PASSWORD_NEED_USERNAME,
@@ -137,9 +128,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(BusNameOwnerFlags)
-#undef BusNameOwnerFlags
-#endif
 enum class BusNameOwnerFlags {
   NONE_ = G_BUS_NAME_OWNER_FLAGS_NONE,
   ALLOW_REPLACEMENT_ = G_BUS_NAME_OWNER_FLAGS_ALLOW_REPLACEMENT,
@@ -177,9 +165,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(BusNameWatcherFlags)
-#undef BusNameWatcherFlags
-#endif
 enum class BusNameWatcherFlags {
   NONE_ = G_BUS_NAME_WATCHER_FLAGS_NONE,
   AUTO_START_ = G_BUS_NAME_WATCHER_FLAGS_AUTO_START,
@@ -215,9 +200,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(ConverterFlags)
-#undef ConverterFlags
-#endif
 enum class ConverterFlags {
   NONE_ = G_CONVERTER_NO_FLAGS,
   INPUT_AT_END_ = G_CONVERTER_INPUT_AT_END,
@@ -254,9 +236,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusCallFlags)
-#undef DBusCallFlags
-#endif
 enum class DBusCallFlags {
   NONE_ = G_DBUS_CALL_FLAGS_NONE,
   NO_AUTO_START_ = G_DBUS_CALL_FLAGS_NO_AUTO_START,
@@ -293,9 +272,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusCapabilityFlags)
-#undef DBusCapabilityFlags
-#endif
 enum class DBusCapabilityFlags {
   NONE_ = G_DBUS_CAPABILITY_FLAGS_NONE,
   UNIX_FD_PASSING_ = G_DBUS_CAPABILITY_FLAGS_UNIX_FD_PASSING,
@@ -331,9 +307,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusConnectionFlags)
-#undef DBusConnectionFlags
-#endif
 enum class DBusConnectionFlags {
   NONE_ = G_DBUS_CONNECTION_FLAGS_NONE,
   AUTHENTICATION_CLIENT_ = G_DBUS_CONNECTION_FLAGS_AUTHENTICATION_CLIENT,
@@ -374,9 +347,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusInterfaceSkeletonFlags)
-#undef DBusInterfaceSkeletonFlags
-#endif
 enum class DBusInterfaceSkeletonFlags {
   NONE_ = G_DBUS_INTERFACE_SKELETON_FLAGS_NONE,
   HANDLE_METHOD_INVOCATIONS_IN_THREAD_ = G_DBUS_INTERFACE_SKELETON_FLAGS_HANDLE_METHOD_INVOCATIONS_IN_THREAD,
@@ -412,9 +382,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusMessageFlags)
-#undef DBusMessageFlags
-#endif
 enum class DBusMessageFlags {
   NONE_ = G_DBUS_MESSAGE_FLAGS_NONE,
   NO_REPLY_EXPECTED_ = G_DBUS_MESSAGE_FLAGS_NO_REPLY_EXPECTED,
@@ -452,9 +419,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusObjectManagerClientFlags)
-#undef DBusObjectManagerClientFlags
-#endif
 enum class DBusObjectManagerClientFlags {
   NONE_ = G_DBUS_OBJECT_MANAGER_CLIENT_FLAGS_NONE,
   DO_NOT_AUTO_START_ = G_DBUS_OBJECT_MANAGER_CLIENT_FLAGS_DO_NOT_AUTO_START,
@@ -490,9 +454,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusPropertyInfoFlags)
-#undef DBusPropertyInfoFlags
-#endif
 enum class DBusPropertyInfoFlags {
   NONE_ = G_DBUS_PROPERTY_INFO_FLAGS_NONE,
   READABLE_ = G_DBUS_PROPERTY_INFO_FLAGS_READABLE,
@@ -529,9 +490,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusProxyFlags)
-#undef DBusProxyFlags
-#endif
 enum class DBusProxyFlags {
   NONE_ = G_DBUS_PROXY_FLAGS_NONE,
   DO_NOT_LOAD_PROPERTIES_ = G_DBUS_PROXY_FLAGS_DO_NOT_LOAD_PROPERTIES,
@@ -572,9 +530,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusSendMessageFlags)
-#undef DBusSendMessageFlags
-#endif
 enum class DBusSendMessageFlags {
   NONE_ = G_DBUS_SEND_MESSAGE_FLAGS_NONE,
   PRESERVE_SERIAL_ = G_DBUS_SEND_MESSAGE_FLAGS_PRESERVE_SERIAL,
@@ -610,9 +565,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusServerFlags)
-#undef DBusServerFlags
-#endif
 enum class DBusServerFlags {
   NONE_ = G_DBUS_SERVER_FLAGS_NONE,
   RUN_IN_THREAD_ = G_DBUS_SERVER_FLAGS_RUN_IN_THREAD,
@@ -650,9 +602,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusSignalFlags)
-#undef DBusSignalFlags
-#endif
 enum class DBusSignalFlags {
   NONE_ = G_DBUS_SIGNAL_FLAGS_NONE,
   NO_MATCH_RULE_ = G_DBUS_SIGNAL_FLAGS_NO_MATCH_RULE,
@@ -690,9 +639,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DBusSubtreeFlags)
-#undef DBusSubtreeFlags
-#endif
 enum class DBusSubtreeFlags {
   NONE_ = G_DBUS_SUBTREE_FLAGS_NONE,
   DISPATCH_TO_UNENUMERATED_NODES_ = G_DBUS_SUBTREE_FLAGS_DISPATCH_TO_UNENUMERATED_NODES,
@@ -728,9 +674,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(DriveStartFlags)
-#undef DriveStartFlags
-#endif
 enum class DriveStartFlags {
   NONE_ = G_DRIVE_START_NONE,
 };
@@ -765,9 +708,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(FileAttributeInfoFlags)
-#undef FileAttributeInfoFlags
-#endif
 enum class FileAttributeInfoFlags {
   NONE_ = G_FILE_ATTRIBUTE_INFO_NONE,
   COPY_WITH_FILE_ = G_FILE_ATTRIBUTE_INFO_COPY_WITH_FILE,
@@ -804,9 +744,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(FileCopyFlags)
-#undef FileCopyFlags
-#endif
 enum class FileCopyFlags {
   NONE_ = G_FILE_COPY_NONE,
   OVERWRITE_ = G_FILE_COPY_OVERWRITE,
@@ -847,9 +784,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(FileCreateFlags)
-#undef FileCreateFlags
-#endif
 enum class FileCreateFlags {
   NONE_ = G_FILE_CREATE_NONE,
   PRIVATE_ = G_FILE_CREATE_PRIVATE,
@@ -886,9 +820,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(FileMeasureFlags)
-#undef FileMeasureFlags
-#endif
 enum class FileMeasureFlags {
   NONE_ = G_FILE_MEASURE_NONE,
   REPORT_ANY_ERROR_ = G_FILE_MEASURE_REPORT_ANY_ERROR,
@@ -926,9 +857,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(FileMonitorFlags)
-#undef FileMonitorFlags
-#endif
 enum class FileMonitorFlags {
   NONE_ = G_FILE_MONITOR_NONE,
   WATCH_MOUNTS_ = G_FILE_MONITOR_WATCH_MOUNTS,
@@ -967,9 +895,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(FileQueryInfoFlags)
-#undef FileQueryInfoFlags
-#endif
 enum class FileQueryInfoFlags {
   NONE_ = G_FILE_QUERY_INFO_NONE,
   NOFOLLOW_SYMLINKS_ = G_FILE_QUERY_INFO_NOFOLLOW_SYMLINKS,
@@ -1005,9 +930,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(IOStreamSpliceFlags)
-#undef IOStreamSpliceFlags
-#endif
 enum class IOStreamSpliceFlags {
   NONE_ = G_IO_STREAM_SPLICE_NONE,
   CLOSE_STREAM1_ = G_IO_STREAM_SPLICE_CLOSE_STREAM1,
@@ -1045,9 +967,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(MountMountFlags)
-#undef MountMountFlags
-#endif
 enum class MountMountFlags {
   NONE_ = G_MOUNT_MOUNT_NONE,
 };
@@ -1082,9 +1001,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(MountUnmountFlags)
-#undef MountUnmountFlags
-#endif
 enum class MountUnmountFlags {
   NONE_ = G_MOUNT_UNMOUNT_NONE,
   FORCE_ = G_MOUNT_UNMOUNT_FORCE,
@@ -1120,9 +1036,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(OutputStreamSpliceFlags)
-#undef OutputStreamSpliceFlags
-#endif
 enum class OutputStreamSpliceFlags {
   NONE_ = G_OUTPUT_STREAM_SPLICE_NONE,
   CLOSE_SOURCE_ = G_OUTPUT_STREAM_SPLICE_CLOSE_SOURCE,
@@ -1159,9 +1072,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(ResolverNameLookupFlags)
-#undef ResolverNameLookupFlags
-#endif
 enum class ResolverNameLookupFlags {
   DEFAULT_ = G_RESOLVER_NAME_LOOKUP_FLAGS_DEFAULT,
   IPV4_ONLY_ = G_RESOLVER_NAME_LOOKUP_FLAGS_IPV4_ONLY,
@@ -1198,9 +1108,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(ResourceFlags)
-#undef ResourceFlags
-#endif
 enum class ResourceFlags {
   NONE_ = G_RESOURCE_FLAGS_NONE,
   COMPRESSED_ = G_RESOURCE_FLAGS_COMPRESSED,
@@ -1236,9 +1143,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(ResourceLookupFlags)
-#undef ResourceLookupFlags
-#endif
 enum class ResourceLookupFlags {
   NONE_ = G_RESOURCE_LOOKUP_FLAGS_NONE,
 };
@@ -1273,9 +1177,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(SettingsBindFlags)
-#undef SettingsBindFlags
-#endif
 enum class SettingsBindFlags {
   DEFAULT_ = G_SETTINGS_BIND_DEFAULT,
   GET_ = G_SETTINGS_BIND_GET,
@@ -1315,9 +1216,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(SocketMsgFlags)
-#undef SocketMsgFlags
-#endif
 enum class SocketMsgFlags {
   NONE_ = G_SOCKET_MSG_NONE,
   OOB_ = G_SOCKET_MSG_OOB,
@@ -1355,9 +1253,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(SubprocessFlags)
-#undef SubprocessFlags
-#endif
 enum class SubprocessFlags {
   NONE_ = G_SUBPROCESS_FLAGS_NONE,
   STDIN_PIPE_ = G_SUBPROCESS_FLAGS_STDIN_PIPE,
@@ -1401,9 +1296,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(TestDBusFlags)
-#undef TestDBusFlags
-#endif
 enum class TestDBusFlags {
   NONE_ = G_TEST_DBUS_NONE,
 };
@@ -1438,9 +1330,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(TlsCertificateFlags)
-#undef TlsCertificateFlags
-#endif
 enum class TlsCertificateFlags {
   UNKNOWN_CA_ = G_TLS_CERTIFICATE_UNKNOWN_CA,
   BAD_IDENTITY_ = G_TLS_CERTIFICATE_BAD_IDENTITY,
@@ -1482,9 +1371,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(TlsDatabaseVerifyFlags)
-#undef TlsDatabaseVerifyFlags
-#endif
 enum class TlsDatabaseVerifyFlags {
   NONE_ = G_TLS_DATABASE_VERIFY_NONE,
 };
@@ -1519,9 +1405,6 @@ namespace repository {
 
 namespace Gio {
 
-#if defined(TlsPasswordFlags)
-#undef TlsPasswordFlags
-#endif
 enum class TlsPasswordFlags {
   NONE_ = G_TLS_PASSWORD_NONE,
   RETRY_ = G_TLS_PASSWORD_RETRY,

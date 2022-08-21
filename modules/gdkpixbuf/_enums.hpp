@@ -9,9 +9,6 @@ namespace repository {
 
 namespace GdkPixbuf {
 
-#if defined(Colorspace)
-#undef Colorspace
-#endif
 enum class Colorspace {
   RGB_ = GDK_COLORSPACE_RGB,
 };
@@ -46,9 +43,6 @@ namespace repository {
 
 namespace GdkPixbuf {
 
-#if defined(InterpType)
-#undef InterpType
-#endif
 enum class InterpType {
   NEAREST_ = GDK_INTERP_NEAREST,
   TILES_ = GDK_INTERP_TILES,
@@ -86,9 +80,6 @@ namespace repository {
 
 namespace GdkPixbuf {
 
-#if defined(PixbufError)
-#undef PixbufError
-#endif
 enum class PixbufError {
   CORRUPT_IMAGE_ = GDK_PIXBUF_ERROR_CORRUPT_IMAGE,
   INSUFFICIENT_MEMORY_ = GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY,
@@ -129,9 +120,6 @@ namespace repository {
 
 namespace GdkPixbuf {
 
-#if defined(PixbufRotation)
-#undef PixbufRotation
-#endif
 enum class PixbufRotation {
   NONE_ = GDK_PIXBUF_ROTATE_NONE,
   COUNTERCLOCKWISE_ = GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE,

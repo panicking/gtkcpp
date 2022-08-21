@@ -9,9 +9,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(AsciiType)
-#undef AsciiType
-#endif
 enum class AsciiType {
   ALNUM_ = G_ASCII_ALNUM,
   ALPHA_ = G_ASCII_ALPHA,
@@ -53,9 +50,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(FileSetContentsFlags)
-#undef FileSetContentsFlags
-#endif
 enum class FileSetContentsFlags {
   NONE_ = G_FILE_SET_CONTENTS_NONE,
   CONSISTENT_ = G_FILE_SET_CONTENTS_CONSISTENT,
@@ -90,9 +84,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(FileTest)
-#undef FileTest
-#endif
 enum class FileTest {
   IS_REGULAR_ = G_FILE_TEST_IS_REGULAR,
   IS_SYMLINK_ = G_FILE_TEST_IS_SYMLINK,
@@ -128,9 +119,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(FormatSizeFlags)
-#undef FormatSizeFlags
-#endif
 enum class FormatSizeFlags {
   DEFAULT_ = G_FORMAT_SIZE_DEFAULT,
   LONG_FORMAT_ = G_FORMAT_SIZE_LONG_FORMAT,
@@ -165,9 +153,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(HookFlagMask)
-#undef HookFlagMask
-#endif
 enum class HookFlagMask {
   ACTIVE_ = G_HOOK_FLAG_ACTIVE,
   IN_CALL_ = G_HOOK_FLAG_IN_CALL,
@@ -201,9 +186,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(IOCondition)
-#undef IOCondition
-#endif
 enum class IOCondition {
   IN_ = G_IO_IN,
   OUT_ = G_IO_OUT,
@@ -243,9 +225,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(IOFlags)
-#undef IOFlags
-#endif
 enum class IOFlags {
   APPEND_ = G_IO_FLAG_APPEND,
   NONBLOCK_ = G_IO_FLAG_NONBLOCK,
@@ -285,9 +264,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(KeyFileFlags)
-#undef KeyFileFlags
-#endif
 enum class KeyFileFlags {
   NONE_ = G_KEY_FILE_NONE,
   KEEP_COMMENTS_ = G_KEY_FILE_KEEP_COMMENTS,
@@ -321,9 +297,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(LogLevelFlags)
-#undef LogLevelFlags
-#endif
 enum class LogLevelFlags {
   FLAG_RECURSION_ = G_LOG_FLAG_RECURSION,
   FLAG_FATAL_ = G_LOG_FLAG_FATAL,
@@ -363,9 +336,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(MainContextFlags)
-#undef MainContextFlags
-#endif
 enum class MainContextFlags {
   NONE_ = G_MAIN_CONTEXT_FLAGS_NONE,
   OWNERLESS_POLLING_ = G_MAIN_CONTEXT_FLAGS_OWNERLESS_POLLING,
@@ -398,9 +368,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(MarkupCollectType)
-#undef MarkupCollectType
-#endif
 enum class MarkupCollectType {
   INVALID_ = G_MARKUP_COLLECT_INVALID,
   STRING_ = G_MARKUP_COLLECT_STRING,
@@ -437,9 +404,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(MarkupParseFlags)
-#undef MarkupParseFlags
-#endif
 enum class MarkupParseFlags {
   DO_NOT_USE_THIS_UNSUPPORTED_FLAG_ = G_MARKUP_DO_NOT_USE_THIS_UNSUPPORTED_FLAG,
   TREAT_CDATA_AS_TEXT_ = G_MARKUP_TREAT_CDATA_AS_TEXT,
@@ -474,9 +438,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(OptionFlags)
-#undef OptionFlags
-#endif
 enum class OptionFlags {
   NONE_ = G_OPTION_FLAG_NONE,
   HIDDEN_ = G_OPTION_FLAG_HIDDEN,
@@ -515,9 +476,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(RegexCompileFlags)
-#undef RegexCompileFlags
-#endif
 enum class RegexCompileFlags {
   CASELESS_ = G_REGEX_CASELESS,
   MULTILINE_ = G_REGEX_MULTILINE,
@@ -566,9 +524,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(RegexMatchFlags)
-#undef RegexMatchFlags
-#endif
 enum class RegexMatchFlags {
   ANCHORED_ = G_REGEX_MATCH_ANCHORED,
   NOTBOL_ = G_REGEX_MATCH_NOTBOL,
@@ -614,9 +569,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(SpawnFlags)
-#undef SpawnFlags
-#endif
 enum class SpawnFlags {
   DEFAULT_ = G_SPAWN_DEFAULT,
   LEAVE_DESCRIPTORS_OPEN_ = G_SPAWN_LEAVE_DESCRIPTORS_OPEN,
@@ -657,9 +609,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(TestSubprocessFlags)
-#undef TestSubprocessFlags
-#endif
 enum class TestSubprocessFlags {
   STDIN_ = G_TEST_SUBPROCESS_INHERIT_STDIN,
   STDOUT_ = G_TEST_SUBPROCESS_INHERIT_STDOUT,
@@ -693,9 +642,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(TraverseFlags)
-#undef TraverseFlags
-#endif
 enum class TraverseFlags {
   LEAVES_ = G_TRAVERSE_LEAVES,
   NON_LEAVES_ = G_TRAVERSE_NON_LEAVES,
@@ -732,9 +678,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(UriFlags)
-#undef UriFlags
-#endif
 enum class UriFlags {
   NONE_ = G_URI_FLAGS_NONE,
   PARSE_RELAXED_ = G_URI_FLAGS_PARSE_RELAXED,
@@ -775,9 +718,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(UriHideFlags)
-#undef UriHideFlags
-#endif
 enum class UriHideFlags {
   NONE_ = G_URI_HIDE_NONE,
   USERINFO_ = G_URI_HIDE_USERINFO,
@@ -814,9 +754,6 @@ namespace repository {
 
 namespace GLib {
 
-#if defined(UriParamsFlags)
-#undef UriParamsFlags
-#endif
 enum class UriParamsFlags {
   NONE_ = G_URI_PARAMS_NONE,
   CASE_INSENSITIVE_ = G_URI_PARAMS_CASE_INSENSITIVE,

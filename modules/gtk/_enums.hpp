@@ -9,9 +9,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(Align)
-#undef Align
-#endif
 enum class Align {
   FILL_ = GTK_ALIGN_FILL,
   START_ = GTK_ALIGN_START,
@@ -50,9 +47,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ArrowPlacement)
-#undef ArrowPlacement
-#endif
 enum class ArrowPlacement {
   BOTH_ = GTK_ARROWS_BOTH,
   START_ = GTK_ARROWS_START,
@@ -89,9 +83,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ArrowType)
-#undef ArrowType
-#endif
 enum class ArrowType {
   UP_ = GTK_ARROW_UP,
   DOWN_ = GTK_ARROW_DOWN,
@@ -130,9 +121,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(AssistantPageType)
-#undef AssistantPageType
-#endif
 enum class AssistantPageType {
   CONTENT_ = GTK_ASSISTANT_PAGE_CONTENT,
   INTRO_ = GTK_ASSISTANT_PAGE_INTRO,
@@ -172,9 +160,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(BaselinePosition)
-#undef BaselinePosition
-#endif
 enum class BaselinePosition {
   TOP_ = GTK_BASELINE_POSITION_TOP,
   CENTER_ = GTK_BASELINE_POSITION_CENTER,
@@ -211,9 +196,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(BorderStyle)
-#undef BorderStyle
-#endif
 enum class BorderStyle {
   NONE_ = GTK_BORDER_STYLE_NONE,
   SOLID_ = GTK_BORDER_STYLE_SOLID,
@@ -257,9 +239,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(BuilderError)
-#undef BuilderError
-#endif
 enum class BuilderError {
   INVALID_TYPE_FUNCTION_ = GTK_BUILDER_ERROR_INVALID_TYPE_FUNCTION,
   UNHANDLED_TAG_ = GTK_BUILDER_ERROR_UNHANDLED_TAG,
@@ -307,9 +286,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ButtonBoxStyle)
-#undef ButtonBoxStyle
-#endif
 enum class ButtonBoxStyle {
   SPREAD_ = GTK_BUTTONBOX_SPREAD,
   EDGE_ = GTK_BUTTONBOX_EDGE,
@@ -349,9 +325,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ButtonRole)
-#undef ButtonRole
-#endif
 enum class ButtonRole {
   NORMAL_ = GTK_BUTTON_ROLE_NORMAL,
   CHECK_ = GTK_BUTTON_ROLE_CHECK,
@@ -388,9 +361,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ButtonsType)
-#undef ButtonsType
-#endif
 enum class ButtonsType {
   NONE_ = GTK_BUTTONS_NONE,
   OK_ = GTK_BUTTONS_OK,
@@ -430,9 +400,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(CellRendererAccelMode)
-#undef CellRendererAccelMode
-#endif
 enum class CellRendererAccelMode {
   GTK_ = GTK_CELL_RENDERER_ACCEL_MODE_GTK,
   OTHER_ = GTK_CELL_RENDERER_ACCEL_MODE_OTHER,
@@ -469,9 +436,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(CellRendererMode)
-#undef CellRendererMode
-#endif
 enum class CellRendererMode {
   INERT_ = GTK_CELL_RENDERER_MODE_INERT,
   ACTIVATABLE_ = GTK_CELL_RENDERER_MODE_ACTIVATABLE,
@@ -508,9 +472,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(CornerType)
-#undef CornerType
-#endif
 enum class CornerType {
   TOP_LEFT_ = GTK_CORNER_TOP_LEFT,
   BOTTOM_LEFT_ = GTK_CORNER_BOTTOM_LEFT,
@@ -548,9 +509,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(CssProviderError)
-#undef CssProviderError
-#endif
 enum class CssProviderError {
   FAILED_ = GTK_CSS_PROVIDER_ERROR_FAILED,
   SYNTAX_ = GTK_CSS_PROVIDER_ERROR_SYNTAX,
@@ -590,9 +548,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(CssSectionType)
-#undef CssSectionType
-#endif
 enum class CssSectionType {
   DOCUMENT_ = GTK_CSS_SECTION_DOCUMENT,
   IMPORT_ = GTK_CSS_SECTION_IMPORT,
@@ -635,9 +590,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(DeleteType)
-#undef DeleteType
-#endif
 enum class DeleteType {
   CHARS_ = GTK_DELETE_CHARS,
   WORD_ENDS_ = GTK_DELETE_WORD_ENDS,
@@ -679,9 +631,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(DirectionType)
-#undef DirectionType
-#endif
 enum class DirectionType {
   TAB_FORWARD_ = GTK_DIR_TAB_FORWARD,
   TAB_BACKWARD_ = GTK_DIR_TAB_BACKWARD,
@@ -721,9 +670,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(DragResult)
-#undef DragResult
-#endif
 enum class DragResult {
   SUCCESS_ = GTK_DRAG_RESULT_SUCCESS,
   NO_TARGET_ = GTK_DRAG_RESULT_NO_TARGET,
@@ -763,9 +709,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(EntryIconPosition)
-#undef EntryIconPosition
-#endif
 enum class EntryIconPosition {
   PRIMARY_ = GTK_ENTRY_ICON_PRIMARY,
   SECONDARY_ = GTK_ENTRY_ICON_SECONDARY,
@@ -801,9 +744,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(EventSequenceState)
-#undef EventSequenceState
-#endif
 enum class EventSequenceState {
   NONE_ = GTK_EVENT_SEQUENCE_NONE,
   CLAIMED_ = GTK_EVENT_SEQUENCE_CLAIMED,
@@ -840,9 +780,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ExpanderStyle)
-#undef ExpanderStyle
-#endif
 enum class ExpanderStyle {
   COLLAPSED_ = GTK_EXPANDER_COLLAPSED,
   SEMI_COLLAPSED_ = GTK_EXPANDER_SEMI_COLLAPSED,
@@ -880,9 +817,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(FileChooserAction)
-#undef FileChooserAction
-#endif
 enum class FileChooserAction {
   OPEN_ = GTK_FILE_CHOOSER_ACTION_OPEN,
   SAVE_ = GTK_FILE_CHOOSER_ACTION_SAVE,
@@ -920,9 +854,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(FileChooserConfirmation)
-#undef FileChooserConfirmation
-#endif
 enum class FileChooserConfirmation {
   CONFIRM_ = GTK_FILE_CHOOSER_CONFIRMATION_CONFIRM,
   ACCEPT_FILENAME_ = GTK_FILE_CHOOSER_CONFIRMATION_ACCEPT_FILENAME,
@@ -959,9 +890,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(FileChooserError)
-#undef FileChooserError
-#endif
 enum class FileChooserError {
   NONEXISTENT_ = GTK_FILE_CHOOSER_ERROR_NONEXISTENT,
   BAD_FILENAME_ = GTK_FILE_CHOOSER_ERROR_BAD_FILENAME,
@@ -999,9 +927,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(IconSize)
-#undef IconSize
-#endif
 enum class IconSize {
   INVALID_ = GTK_ICON_SIZE_INVALID,
   MENU_ = GTK_ICON_SIZE_MENU,
@@ -1042,9 +967,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(IconThemeError)
-#undef IconThemeError
-#endif
 enum class IconThemeError {
   NOT_FOUND_ = GTK_ICON_THEME_NOT_FOUND,
   FAILED_ = GTK_ICON_THEME_FAILED,
@@ -1080,9 +1002,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(IconViewDropPosition)
-#undef IconViewDropPosition
-#endif
 enum class IconViewDropPosition {
   NO_DROP_ = GTK_ICON_VIEW_NO_DROP,
   DROP_INTO_ = GTK_ICON_VIEW_DROP_INTO,
@@ -1122,9 +1041,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ImageType)
-#undef ImageType
-#endif
 enum class ImageType {
   EMPTY_ = GTK_IMAGE_EMPTY,
   PIXBUF_ = GTK_IMAGE_PIXBUF,
@@ -1166,9 +1082,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(InputPurpose)
-#undef InputPurpose
-#endif
 enum class InputPurpose {
   FREE_FORM_ = GTK_INPUT_PURPOSE_FREE_FORM,
   ALPHA_ = GTK_INPUT_PURPOSE_ALPHA,
@@ -1213,9 +1126,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(Justification)
-#undef Justification
-#endif
 enum class Justification {
   LEFT_ = GTK_JUSTIFY_LEFT,
   RIGHT_ = GTK_JUSTIFY_RIGHT,
@@ -1253,9 +1163,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(LevelBarMode)
-#undef LevelBarMode
-#endif
 enum class LevelBarMode {
   CONTINUOUS_ = GTK_LEVEL_BAR_MODE_CONTINUOUS,
   DISCRETE_ = GTK_LEVEL_BAR_MODE_DISCRETE,
@@ -1291,9 +1198,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(License)
-#undef License
-#endif
 enum class License {
   UNKNOWN_ = GTK_LICENSE_UNKNOWN,
   CUSTOM_ = GTK_LICENSE_CUSTOM,
@@ -1345,9 +1249,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(MenuDirectionType)
-#undef MenuDirectionType
-#endif
 enum class MenuDirectionType {
   PARENT_ = GTK_MENU_DIR_PARENT,
   CHILD_ = GTK_MENU_DIR_CHILD,
@@ -1385,9 +1286,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(MessageType)
-#undef MessageType
-#endif
 enum class MessageType {
   INFO_ = GTK_MESSAGE_INFO,
   WARNING_ = GTK_MESSAGE_WARNING,
@@ -1426,9 +1324,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(MovementStep)
-#undef MovementStep
-#endif
 enum class MovementStep {
   LOGICAL_POSITIONS_ = GTK_MOVEMENT_LOGICAL_POSITIONS,
   VISUAL_POSITIONS_ = GTK_MOVEMENT_VISUAL_POSITIONS,
@@ -1472,9 +1367,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(NotebookTab)
-#undef NotebookTab
-#endif
 enum class NotebookTab {
   FIRST_ = GTK_NOTEBOOK_TAB_FIRST,
   LAST_ = GTK_NOTEBOOK_TAB_LAST,
@@ -1510,9 +1402,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(NumberUpLayout)
-#undef NumberUpLayout
-#endif
 enum class NumberUpLayout {
   LRTB_ = GTK_NUMBER_UP_LAYOUT_LEFT_TO_RIGHT_TOP_TO_BOTTOM,
   LRBT_ = GTK_NUMBER_UP_LAYOUT_LEFT_TO_RIGHT_BOTTOM_TO_TOP,
@@ -1554,9 +1443,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(Orientation)
-#undef Orientation
-#endif
 enum class Orientation {
   HORIZONTAL_ = GTK_ORIENTATION_HORIZONTAL,
   VERTICAL_ = GTK_ORIENTATION_VERTICAL,
@@ -1592,9 +1478,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PackDirection)
-#undef PackDirection
-#endif
 enum class PackDirection {
   LTR_ = GTK_PACK_DIRECTION_LTR,
   RTL_ = GTK_PACK_DIRECTION_RTL,
@@ -1632,9 +1515,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PackType)
-#undef PackType
-#endif
 enum class PackType {
   START_ = GTK_PACK_START,
   END_ = GTK_PACK_END,
@@ -1670,9 +1550,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PadActionType)
-#undef PadActionType
-#endif
 enum class PadActionType {
   BUTTON_ = GTK_PAD_ACTION_BUTTON,
   RING_ = GTK_PAD_ACTION_RING,
@@ -1709,9 +1586,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PageOrientation)
-#undef PageOrientation
-#endif
 enum class PageOrientation {
   PORTRAIT_ = GTK_PAGE_ORIENTATION_PORTRAIT,
   LANDSCAPE_ = GTK_PAGE_ORIENTATION_LANDSCAPE,
@@ -1749,9 +1623,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PageSet)
-#undef PageSet
-#endif
 enum class PageSet {
   ALL_ = GTK_PAGE_SET_ALL,
   EVEN_ = GTK_PAGE_SET_EVEN,
@@ -1788,9 +1659,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PanDirection)
-#undef PanDirection
-#endif
 enum class PanDirection {
   LEFT_ = GTK_PAN_DIRECTION_LEFT,
   RIGHT_ = GTK_PAN_DIRECTION_RIGHT,
@@ -1828,9 +1696,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PolicyType)
-#undef PolicyType
-#endif
 enum class PolicyType {
   ALWAYS_ = GTK_POLICY_ALWAYS,
   AUTOMATIC_ = GTK_POLICY_AUTOMATIC,
@@ -1868,9 +1733,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PopoverConstraint)
-#undef PopoverConstraint
-#endif
 enum class PopoverConstraint {
   NONE_ = GTK_POPOVER_CONSTRAINT_NONE,
   WINDOW_ = GTK_POPOVER_CONSTRAINT_WINDOW,
@@ -1906,9 +1768,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PositionType)
-#undef PositionType
-#endif
 enum class PositionType {
   LEFT_ = GTK_POS_LEFT,
   RIGHT_ = GTK_POS_RIGHT,
@@ -1946,9 +1805,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PrintDuplex)
-#undef PrintDuplex
-#endif
 enum class PrintDuplex {
   SIMPLEX_ = GTK_PRINT_DUPLEX_SIMPLEX,
   HORIZONTAL_ = GTK_PRINT_DUPLEX_HORIZONTAL,
@@ -1985,9 +1841,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PrintError)
-#undef PrintError
-#endif
 enum class PrintError {
   GENERAL_ = GTK_PRINT_ERROR_GENERAL,
   INTERNAL_ERROR_ = GTK_PRINT_ERROR_INTERNAL_ERROR,
@@ -2025,9 +1878,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PrintOperationAction)
-#undef PrintOperationAction
-#endif
 enum class PrintOperationAction {
   PRINT_DIALOG_ = GTK_PRINT_OPERATION_ACTION_PRINT_DIALOG,
   PRINT_ = GTK_PRINT_OPERATION_ACTION_PRINT,
@@ -2065,9 +1915,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PrintOperationResult)
-#undef PrintOperationResult
-#endif
 enum class PrintOperationResult {
   ERROR_ = GTK_PRINT_OPERATION_RESULT_ERROR,
   APPLY_ = GTK_PRINT_OPERATION_RESULT_APPLY,
@@ -2105,9 +1952,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PrintPages)
-#undef PrintPages
-#endif
 enum class PrintPages {
   ALL_ = GTK_PRINT_PAGES_ALL,
   CURRENT_ = GTK_PRINT_PAGES_CURRENT,
@@ -2145,9 +1989,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PrintQuality)
-#undef PrintQuality
-#endif
 enum class PrintQuality {
   LOW_ = GTK_PRINT_QUALITY_LOW,
   NORMAL_ = GTK_PRINT_QUALITY_NORMAL,
@@ -2185,9 +2026,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PrintStatus)
-#undef PrintStatus
-#endif
 enum class PrintStatus {
   INITIAL_ = GTK_PRINT_STATUS_INITIAL,
   PREPARING_ = GTK_PRINT_STATUS_PREPARING,
@@ -2230,9 +2068,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(PropagationPhase)
-#undef PropagationPhase
-#endif
 enum class PropagationPhase {
   NONE_ = GTK_PHASE_NONE,
   CAPTURE_ = GTK_PHASE_CAPTURE,
@@ -2270,9 +2105,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(RecentChooserError)
-#undef RecentChooserError
-#endif
 enum class RecentChooserError {
   NOT_FOUND_ = GTK_RECENT_CHOOSER_ERROR_NOT_FOUND,
   INVALID_URI_ = GTK_RECENT_CHOOSER_ERROR_INVALID_URI,
@@ -2308,9 +2140,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(RecentManagerError)
-#undef RecentManagerError
-#endif
 enum class RecentManagerError {
   NOT_FOUND_ = GTK_RECENT_MANAGER_ERROR_NOT_FOUND,
   INVALID_URI_ = GTK_RECENT_MANAGER_ERROR_INVALID_URI,
@@ -2351,9 +2180,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(RecentSortType)
-#undef RecentSortType
-#endif
 enum class RecentSortType {
   NONE_ = GTK_RECENT_SORT_NONE,
   MRU_ = GTK_RECENT_SORT_MRU,
@@ -2391,9 +2217,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ReliefStyle)
-#undef ReliefStyle
-#endif
 enum class ReliefStyle {
   NORMAL_ = GTK_RELIEF_NORMAL,
   HALF_ = GTK_RELIEF_HALF,
@@ -2430,9 +2253,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ResizeMode)
-#undef ResizeMode
-#endif
 enum class ResizeMode {
   PARENT_ = GTK_RESIZE_PARENT,
   QUEUE_ = GTK_RESIZE_QUEUE,
@@ -2469,9 +2289,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ResponseType)
-#undef ResponseType
-#endif
 enum class ResponseType {
   NONE_ = GTK_RESPONSE_NONE,
   REJECT_ = GTK_RESPONSE_REJECT,
@@ -2516,9 +2333,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(RevealerTransitionType)
-#undef RevealerTransitionType
-#endif
 enum class RevealerTransitionType {
   NONE_ = GTK_REVEALER_TRANSITION_TYPE_NONE,
   CROSSFADE_ = GTK_REVEALER_TRANSITION_TYPE_CROSSFADE,
@@ -2558,9 +2372,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ScrollStep)
-#undef ScrollStep
-#endif
 enum class ScrollStep {
   STEPS_ = GTK_SCROLL_STEPS,
   PAGES_ = GTK_SCROLL_PAGES,
@@ -2600,9 +2411,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ScrollType)
-#undef ScrollType
-#endif
 enum class ScrollType {
   NONE_ = GTK_SCROLL_NONE,
   JUMP_ = GTK_SCROLL_JUMP,
@@ -2652,9 +2460,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ScrollablePolicy)
-#undef ScrollablePolicy
-#endif
 enum class ScrollablePolicy {
   MINIMUM_ = GTK_SCROLL_MINIMUM,
   NATURAL_ = GTK_SCROLL_NATURAL,
@@ -2690,9 +2495,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(SelectionMode)
-#undef SelectionMode
-#endif
 enum class SelectionMode {
   NONE_ = GTK_SELECTION_NONE,
   SINGLE_ = GTK_SELECTION_SINGLE,
@@ -2730,9 +2532,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(SensitivityType)
-#undef SensitivityType
-#endif
 enum class SensitivityType {
   AUTO_ = GTK_SENSITIVITY_AUTO,
   ON_ = GTK_SENSITIVITY_ON,
@@ -2769,9 +2568,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ShadowType)
-#undef ShadowType
-#endif
 enum class ShadowType {
   NONE_ = GTK_SHADOW_NONE,
   IN_ = GTK_SHADOW_IN,
@@ -2810,9 +2606,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ShortcutType)
-#undef ShortcutType
-#endif
 enum class ShortcutType {
   ACCELERATOR_ = GTK_SHORTCUT_ACCELERATOR,
   GESTURE_PINCH_ = GTK_SHORTCUT_GESTURE_PINCH,
@@ -2854,9 +2647,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(SizeGroupMode)
-#undef SizeGroupMode
-#endif
 enum class SizeGroupMode {
   NONE_ = GTK_SIZE_GROUP_NONE,
   HORIZONTAL_ = GTK_SIZE_GROUP_HORIZONTAL,
@@ -2894,9 +2684,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(SizeRequestMode)
-#undef SizeRequestMode
-#endif
 enum class SizeRequestMode {
   HEIGHT_FOR_WIDTH_ = GTK_SIZE_REQUEST_HEIGHT_FOR_WIDTH,
   WIDTH_FOR_HEIGHT_ = GTK_SIZE_REQUEST_WIDTH_FOR_HEIGHT,
@@ -2933,9 +2720,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(SortType)
-#undef SortType
-#endif
 enum class SortType {
   ASCENDING_ = GTK_SORT_ASCENDING,
   DESCENDING_ = GTK_SORT_DESCENDING,
@@ -2971,9 +2755,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(SpinButtonUpdatePolicy)
-#undef SpinButtonUpdatePolicy
-#endif
 enum class SpinButtonUpdatePolicy {
   ALWAYS_ = GTK_UPDATE_ALWAYS,
   IF_VALID_ = GTK_UPDATE_IF_VALID,
@@ -3009,9 +2790,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(SpinType)
-#undef SpinType
-#endif
 enum class SpinType {
   STEP_FORWARD_ = GTK_SPIN_STEP_FORWARD,
   STEP_BACKWARD_ = GTK_SPIN_STEP_BACKWARD,
@@ -3052,9 +2830,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(StackTransitionType)
-#undef StackTransitionType
-#endif
 enum class StackTransitionType {
   NONE_ = GTK_STACK_TRANSITION_TYPE_NONE,
   CROSSFADE_ = GTK_STACK_TRANSITION_TYPE_CROSSFADE,
@@ -3108,9 +2883,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TextBufferTargetInfo)
-#undef TextBufferTargetInfo
-#endif
 enum class TextBufferTargetInfo {
   BUFFER_CONTENTS_ = GTK_TEXT_BUFFER_TARGET_INFO_BUFFER_CONTENTS,
   RICH_TEXT_ = GTK_TEXT_BUFFER_TARGET_INFO_RICH_TEXT,
@@ -3147,9 +2919,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TextDirection)
-#undef TextDirection
-#endif
 enum class TextDirection {
   NONE_ = GTK_TEXT_DIR_NONE,
   LTR_ = GTK_TEXT_DIR_LTR,
@@ -3186,9 +2955,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TextExtendSelection)
-#undef TextExtendSelection
-#endif
 enum class TextExtendSelection {
   WORD_ = GTK_TEXT_EXTEND_SELECTION_WORD,
   LINE_ = GTK_TEXT_EXTEND_SELECTION_LINE,
@@ -3224,9 +2990,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TextViewLayer)
-#undef TextViewLayer
-#endif
 enum class TextViewLayer {
   BELOW_ = GTK_TEXT_VIEW_LAYER_BELOW,
   ABOVE_ = GTK_TEXT_VIEW_LAYER_ABOVE,
@@ -3264,9 +3027,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TextWindowType)
-#undef TextWindowType
-#endif
 enum class TextWindowType {
   PRIVATE_ = GTK_TEXT_WINDOW_PRIVATE,
   WIDGET_ = GTK_TEXT_WINDOW_WIDGET,
@@ -3307,9 +3067,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(ToolbarStyle)
-#undef ToolbarStyle
-#endif
 enum class ToolbarStyle {
   ICONS_ = GTK_TOOLBAR_ICONS,
   TEXT_ = GTK_TOOLBAR_TEXT,
@@ -3347,9 +3104,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TreeViewColumnSizing)
-#undef TreeViewColumnSizing
-#endif
 enum class TreeViewColumnSizing {
   GROW_ONLY_ = GTK_TREE_VIEW_COLUMN_GROW_ONLY,
   AUTOSIZE_ = GTK_TREE_VIEW_COLUMN_AUTOSIZE,
@@ -3386,9 +3140,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TreeViewDropPosition)
-#undef TreeViewDropPosition
-#endif
 enum class TreeViewDropPosition {
   BEFORE_ = GTK_TREE_VIEW_DROP_BEFORE,
   AFTER_ = GTK_TREE_VIEW_DROP_AFTER,
@@ -3426,9 +3177,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(TreeViewGridLines)
-#undef TreeViewGridLines
-#endif
 enum class TreeViewGridLines {
   NONE_ = GTK_TREE_VIEW_GRID_LINES_NONE,
   HORIZONTAL_ = GTK_TREE_VIEW_GRID_LINES_HORIZONTAL,
@@ -3466,9 +3214,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(Unit)
-#undef Unit
-#endif
 enum class Unit {
   NONE_ = GTK_UNIT_NONE,
   POINTS_ = GTK_UNIT_POINTS,
@@ -3506,9 +3251,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(WidgetHelpType)
-#undef WidgetHelpType
-#endif
 enum class WidgetHelpType {
   TOOLTIP_ = GTK_WIDGET_HELP_TOOLTIP,
   WHATS_THIS_ = GTK_WIDGET_HELP_WHATS_THIS,
@@ -3544,9 +3286,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(WindowPosition)
-#undef WindowPosition
-#endif
 enum class WindowPosition {
   NONE_ = GTK_WIN_POS_NONE,
   CENTER_ = GTK_WIN_POS_CENTER,
@@ -3585,9 +3324,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(WindowType)
-#undef WindowType
-#endif
 enum class WindowType {
   TOPLEVEL_ = GTK_WINDOW_TOPLEVEL,
   POPUP_ = GTK_WINDOW_POPUP,
@@ -3623,9 +3359,6 @@ namespace repository {
 
 namespace Gtk {
 
-#if defined(WrapMode)
-#undef WrapMode
-#endif
 enum class WrapMode {
   NONE_ = GTK_WRAP_NONE,
   CHAR_ = GTK_WRAP_CHAR,

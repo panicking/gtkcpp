@@ -9,9 +9,6 @@ namespace repository {
 
 namespace HarfBuzz {
 
-#if defined(buffer_diff_flags_t)
-#undef buffer_diff_flags_t
-#endif
 enum class buffer_diff_flags_t {
   EQUAL_ = HB_BUFFER_DIFF_FLAG_EQUAL,
   CONTENT_TYPE_MISMATCH_ = HB_BUFFER_DIFF_FLAG_CONTENT_TYPE_MISMATCH,
@@ -54,9 +51,6 @@ namespace repository {
 
 namespace HarfBuzz {
 
-#if defined(buffer_flags_t)
-#undef buffer_flags_t
-#endif
 enum class buffer_flags_t {
   DEFAULT_ = HB_BUFFER_FLAG_DEFAULT,
   BOT_ = HB_BUFFER_FLAG_BOT,
@@ -96,9 +90,6 @@ namespace repository {
 
 namespace HarfBuzz {
 
-#if defined(buffer_serialize_flags_t)
-#undef buffer_serialize_flags_t
-#endif
 enum class buffer_serialize_flags_t {
   DEFAULT_ = HB_BUFFER_SERIALIZE_FLAG_DEFAULT,
   NO_CLUSTERS_ = HB_BUFFER_SERIALIZE_FLAG_NO_CLUSTERS,
@@ -139,9 +130,6 @@ namespace repository {
 
 namespace HarfBuzz {
 
-#if defined(glyph_flags_t)
-#undef glyph_flags_t
-#endif
 enum class glyph_flags_t {
   UNSAFE_TO_BREAK_ = HB_GLYPH_FLAG_UNSAFE_TO_BREAK,
   DEFINED_ = HB_GLYPH_FLAG_DEFINED,
@@ -177,9 +165,6 @@ namespace repository {
 
 namespace HarfBuzz {
 
-#if defined(ot_color_palette_flags_t)
-#undef ot_color_palette_flags_t
-#endif
 enum class ot_color_palette_flags_t {
   DEFAULT_ = HB_OT_COLOR_PALETTE_FLAG_DEFAULT,
   USABLE_WITH_LIGHT_BACKGROUND_ = HB_OT_COLOR_PALETTE_FLAG_USABLE_WITH_LIGHT_BACKGROUND,
@@ -216,9 +201,6 @@ namespace repository {
 
 namespace HarfBuzz {
 
-#if defined(ot_math_glyph_part_flags_t)
-#undef ot_math_glyph_part_flags_t
-#endif
 enum class ot_math_glyph_part_flags_t {
   EXTENDER_ = HB_OT_MATH_GLYPH_PART_FLAG_EXTENDER,
 };
@@ -253,9 +235,6 @@ namespace repository {
 
 namespace HarfBuzz {
 
-#if defined(ot_var_axis_flags_t)
-#undef ot_var_axis_flags_t
-#endif
 enum class ot_var_axis_flags_t {
   HIDDEN_ = HB_OT_VAR_AXIS_FLAG_HIDDEN,
 };

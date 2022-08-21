@@ -9,9 +9,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(AxisUse)
-#undef AxisUse
-#endif
 enum class AxisUse {
   IGNORE_ = GDK_AXIS_IGNORE,
   X_ = GDK_AXIS_X,
@@ -56,9 +53,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(ByteOrder)
-#undef ByteOrder
-#endif
 enum class ByteOrder {
   LSB_FIRST_ = GDK_LSB_FIRST,
   MSB_FIRST_ = GDK_MSB_FIRST,
@@ -94,9 +88,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(CrossingMode)
-#undef CrossingMode
-#endif
 enum class CrossingMode {
   NORMAL_ = GDK_CROSSING_NORMAL,
   GRAB_ = GDK_CROSSING_GRAB,
@@ -139,9 +130,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(CursorType)
-#undef CursorType
-#endif
 enum class CursorType {
   X_CURSOR_ = GDK_X_CURSOR,
   ARROW_ = GDK_ARROW,
@@ -255,9 +243,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(DevicePadFeature)
-#undef DevicePadFeature
-#endif
 enum class DevicePadFeature {
   BUTTON_ = GDK_DEVICE_PAD_FEATURE_BUTTON,
   RING_ = GDK_DEVICE_PAD_FEATURE_RING,
@@ -294,9 +279,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(DeviceToolType)
-#undef DeviceToolType
-#endif
 enum class DeviceToolType {
   UNKNOWN_ = GDK_DEVICE_TOOL_TYPE_UNKNOWN,
   PEN_ = GDK_DEVICE_TOOL_TYPE_PEN,
@@ -338,9 +320,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(DeviceType)
-#undef DeviceType
-#endif
 enum class DeviceType {
   MASTER_ = GDK_DEVICE_TYPE_MASTER,
   SLAVE_ = GDK_DEVICE_TYPE_SLAVE,
@@ -377,9 +356,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(DragCancelReason)
-#undef DragCancelReason
-#endif
 enum class DragCancelReason {
   NO_TARGET_ = GDK_DRAG_CANCEL_NO_TARGET,
   USER_CANCELLED_ = GDK_DRAG_CANCEL_USER_CANCELLED,
@@ -416,9 +392,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(DragProtocol)
-#undef DragProtocol
-#endif
 enum class DragProtocol {
   NONE_ = GDK_DRAG_PROTO_NONE,
   MOTIF_ = GDK_DRAG_PROTO_MOTIF,
@@ -460,9 +433,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(EventType)
-#undef EventType
-#endif
 enum class EventType {
   NOTHING_ = GDK_NOTHING,
   DELETE_ = GDK_DELETE,
@@ -547,9 +517,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(FilterReturn)
-#undef FilterReturn
-#endif
 enum class FilterReturn {
   CONTINUE_ = GDK_FILTER_CONTINUE,
   TRANSLATE_ = GDK_FILTER_TRANSLATE,
@@ -586,9 +553,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(FullscreenMode)
-#undef FullscreenMode
-#endif
 enum class FullscreenMode {
   CURRENT_MONITOR_ = GDK_FULLSCREEN_ON_CURRENT_MONITOR,
   ALL_MONITORS_ = GDK_FULLSCREEN_ON_ALL_MONITORS,
@@ -624,9 +588,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(GLError)
-#undef GLError
-#endif
 enum class GLError {
   NOT_AVAILABLE_ = GDK_GL_ERROR_NOT_AVAILABLE,
   UNSUPPORTED_FORMAT_ = GDK_GL_ERROR_UNSUPPORTED_FORMAT,
@@ -663,9 +624,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(GrabOwnership)
-#undef GrabOwnership
-#endif
 enum class GrabOwnership {
   NONE_ = GDK_OWNERSHIP_NONE,
   WINDOW_ = GDK_OWNERSHIP_WINDOW,
@@ -702,9 +660,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(GrabStatus)
-#undef GrabStatus
-#endif
 enum class GrabStatus {
   SUCCESS_ = GDK_GRAB_SUCCESS,
   ALREADY_GRABBED_ = GDK_GRAB_ALREADY_GRABBED,
@@ -744,9 +699,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(Gravity)
-#undef Gravity
-#endif
 enum class Gravity {
   NORTH_WEST_ = GDK_GRAVITY_NORTH_WEST,
   NORTH_ = GDK_GRAVITY_NORTH,
@@ -790,9 +742,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(InputMode)
-#undef InputMode
-#endif
 enum class InputMode {
   DISABLED_ = GDK_MODE_DISABLED,
   SCREEN_ = GDK_MODE_SCREEN,
@@ -829,9 +778,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(InputSource)
-#undef InputSource
-#endif
 enum class InputSource {
   MOUSE_ = GDK_SOURCE_MOUSE,
   PEN_ = GDK_SOURCE_PEN,
@@ -874,9 +820,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(ModifierIntent)
-#undef ModifierIntent
-#endif
 enum class ModifierIntent {
   PRIMARY_ACCELERATOR_ = GDK_MODIFIER_INTENT_PRIMARY_ACCELERATOR,
   CONTEXT_MENU_ = GDK_MODIFIER_INTENT_CONTEXT_MENU,
@@ -917,9 +860,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(NotifyType)
-#undef NotifyType
-#endif
 enum class NotifyType {
   ANCESTOR_ = GDK_NOTIFY_ANCESTOR,
   VIRTUAL_ = GDK_NOTIFY_VIRTUAL,
@@ -959,9 +899,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(OwnerChange)
-#undef OwnerChange
-#endif
 enum class OwnerChange {
   NEW_OWNER_ = GDK_OWNER_CHANGE_NEW_OWNER,
   DESTROY_ = GDK_OWNER_CHANGE_DESTROY,
@@ -998,9 +935,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(PropMode)
-#undef PropMode
-#endif
 enum class PropMode {
   REPLACE_ = GDK_PROP_MODE_REPLACE,
   PREPEND_ = GDK_PROP_MODE_PREPEND,
@@ -1037,9 +971,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(PropertyState)
-#undef PropertyState
-#endif
 enum class PropertyState {
   NEW_VALUE_ = GDK_PROPERTY_NEW_VALUE,
   DELETE_ = GDK_PROPERTY_DELETE,
@@ -1075,9 +1006,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(ScrollDirection)
-#undef ScrollDirection
-#endif
 enum class ScrollDirection {
   UP_ = GDK_SCROLL_UP,
   DOWN_ = GDK_SCROLL_DOWN,
@@ -1116,9 +1044,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(SettingAction)
-#undef SettingAction
-#endif
 enum class SettingAction {
   NEW_ = GDK_SETTING_ACTION_NEW,
   CHANGED_ = GDK_SETTING_ACTION_CHANGED,
@@ -1155,9 +1080,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(Status)
-#undef Status
-#endif
 enum class Status {
   OK_ = GDK_OK,
   ERROR_ = GDK_ERROR,
@@ -1196,9 +1118,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(SubpixelLayout)
-#undef SubpixelLayout
-#endif
 enum class SubpixelLayout {
   UNKNOWN_ = GDK_SUBPIXEL_LAYOUT_UNKNOWN,
   NONE_ = GDK_SUBPIXEL_LAYOUT_NONE,
@@ -1238,9 +1157,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(TouchpadGesturePhase)
-#undef TouchpadGesturePhase
-#endif
 enum class TouchpadGesturePhase {
   BEGIN_ = GDK_TOUCHPAD_GESTURE_PHASE_BEGIN,
   UPDATE_ = GDK_TOUCHPAD_GESTURE_PHASE_UPDATE,
@@ -1278,9 +1194,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(VisibilityState)
-#undef VisibilityState
-#endif
 enum class VisibilityState {
   UNOBSCURED_ = GDK_VISIBILITY_UNOBSCURED,
   PARTIAL_ = GDK_VISIBILITY_PARTIAL,
@@ -1317,9 +1230,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(VisualType)
-#undef VisualType
-#endif
 enum class VisualType {
   STATIC_GRAY_ = GDK_VISUAL_STATIC_GRAY,
   GRAYSCALE_ = GDK_VISUAL_GRAYSCALE,
@@ -1359,9 +1269,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(WindowEdge)
-#undef WindowEdge
-#endif
 enum class WindowEdge {
   NORTH_WEST_ = GDK_WINDOW_EDGE_NORTH_WEST,
   NORTH_ = GDK_WINDOW_EDGE_NORTH,
@@ -1403,9 +1310,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(WindowType)
-#undef WindowType
-#endif
 enum class WindowType {
   ROOT_ = GDK_WINDOW_ROOT,
   TOPLEVEL_ = GDK_WINDOW_TOPLEVEL,
@@ -1446,9 +1350,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(WindowTypeHint)
-#undef WindowTypeHint
-#endif
 enum class WindowTypeHint {
   NORMAL_ = GDK_WINDOW_TYPE_HINT_NORMAL,
   DIALOG_ = GDK_WINDOW_TYPE_HINT_DIALOG,
@@ -1496,9 +1397,6 @@ namespace repository {
 
 namespace Gdk {
 
-#if defined(WindowWindowClass)
-#undef WindowWindowClass
-#endif
 enum class WindowWindowClass {
   INPUT_OUTPUT_ = GDK_INPUT_OUTPUT,
   INPUT_ONLY_ = GDK_INPUT_ONLY,

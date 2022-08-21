@@ -9,9 +9,6 @@ namespace repository {
 
 namespace GObject {
 
-#if defined(BindingFlags)
-#undef BindingFlags
-#endif
 enum class BindingFlags {
   DEFAULT_ = G_BINDING_DEFAULT,
   BIDIRECTIONAL_ = G_BINDING_BIDIRECTIONAL,
@@ -49,9 +46,6 @@ namespace repository {
 
 namespace GObject {
 
-#if defined(ConnectFlags)
-#undef ConnectFlags
-#endif
 enum class ConnectFlags {
   AFTER_ = G_CONNECT_AFTER,
   SWAPPED_ = G_CONNECT_SWAPPED,
@@ -84,9 +78,6 @@ namespace repository {
 
 namespace GObject {
 
-#if defined(ParamFlags)
-#undef ParamFlags
-#endif
 enum class ParamFlags {
   READABLE_ = G_PARAM_READABLE,
   WRITABLE_ = G_PARAM_WRITABLE,
@@ -129,9 +120,6 @@ namespace repository {
 
 namespace GObject {
 
-#if defined(SignalFlags)
-#undef SignalFlags
-#endif
 enum class SignalFlags {
   RUN_FIRST_ = G_SIGNAL_RUN_FIRST,
   RUN_LAST_ = G_SIGNAL_RUN_LAST,
@@ -172,9 +160,6 @@ namespace repository {
 
 namespace GObject {
 
-#if defined(SignalMatchType)
-#undef SignalMatchType
-#endif
 enum class SignalMatchType {
   ID_ = G_SIGNAL_MATCH_ID,
   DETAIL_ = G_SIGNAL_MATCH_DETAIL,
@@ -211,9 +196,6 @@ namespace repository {
 
 namespace GObject {
 
-#if defined(TypeFlags)
-#undef TypeFlags
-#endif
 enum class TypeFlags {
   ABSTRACT_ = G_TYPE_FLAG_ABSTRACT,
   VALUE_ABSTRACT_ = G_TYPE_FLAG_VALUE_ABSTRACT,
@@ -247,9 +229,6 @@ namespace repository {
 
 namespace GObject {
 
-#if defined(TypeFundamentalFlags)
-#undef TypeFundamentalFlags
-#endif
 enum class TypeFundamentalFlags {
   CLASSED_ = G_TYPE_FLAG_CLASSED,
   INSTANTIATABLE_ = G_TYPE_FLAG_INSTANTIATABLE,

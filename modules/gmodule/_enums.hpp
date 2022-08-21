@@ -9,9 +9,6 @@ namespace repository {
 
 namespace GModule {
 
-#if defined(ModuleError)
-#undef ModuleError
-#endif
 enum class ModuleError {
   FAILED_ = G_MODULE_ERROR_FAILED,
   CHECK_FAILED_ = G_MODULE_ERROR_CHECK_FAILED,

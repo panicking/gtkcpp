@@ -9,9 +9,6 @@ namespace repository {
 
 namespace Pango {
 
-#if defined(FontMask)
-#undef FontMask
-#endif
 enum class FontMask {
   FAMILY_ = PANGO_FONT_MASK_FAMILY,
   STYLE_ = PANGO_FONT_MASK_STYLE,
@@ -53,9 +50,6 @@ namespace repository {
 
 namespace Pango {
 
-#if defined(LayoutDeserializeFlags)
-#undef LayoutDeserializeFlags
-#endif
 enum class LayoutDeserializeFlags {
   DEFAULT_ = PANGO_LAYOUT_DESERIALIZE_DEFAULT,
   CONTEXT_ = PANGO_LAYOUT_DESERIALIZE_CONTEXT,
@@ -91,9 +85,6 @@ namespace repository {
 
 namespace Pango {
 
-#if defined(LayoutSerializeFlags)
-#undef LayoutSerializeFlags
-#endif
 enum class LayoutSerializeFlags {
   DEFAULT_ = PANGO_LAYOUT_SERIALIZE_DEFAULT,
   CONTEXT_ = PANGO_LAYOUT_SERIALIZE_CONTEXT,
@@ -130,9 +121,6 @@ namespace repository {
 
 namespace Pango {
 
-#if defined(ShapeFlags)
-#undef ShapeFlags
-#endif
 enum class ShapeFlags {
   NONE_ = PANGO_SHAPE_NONE,
   ROUND_POSITIONS_ = PANGO_SHAPE_ROUND_POSITIONS,
@@ -168,9 +156,6 @@ namespace repository {
 
 namespace Pango {
 
-#if defined(ShowFlags)
-#undef ShowFlags
-#endif
 enum class ShowFlags {
   NONE_ = PANGO_SHOW_NONE,
   SPACES_ = PANGO_SHOW_SPACES,

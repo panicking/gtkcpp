@@ -48,9 +48,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(KeyEventType)
-#undef KeyEventType
-#endif
 enum class KeyEventType {
   PRESS_ = ATK_KEY_EVENT_PRESS,
   RELEASE_ = ATK_KEY_EVENT_RELEASE,
@@ -87,9 +84,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(Layer)
-#undef Layer
-#endif
 enum class Layer {
   INVALID_ = ATK_LAYER_INVALID,
   BACKGROUND_ = ATK_LAYER_BACKGROUND,
@@ -131,9 +125,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(RelationType)
-#undef RelationType
-#endif
 enum class RelationType {
   NULL_ = ATK_RELATION_NULL,
   CONTROLLED_BY_ = ATK_RELATION_CONTROLLED_BY,
@@ -189,9 +180,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(Role)
-#undef Role
-#endif
 enum class Role {
   INVALID_ = ATK_ROLE_INVALID,
   ACCELERATOR_LABEL_ = ATK_ROLE_ACCEL_LABEL,
@@ -353,9 +341,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(ScrollType)
-#undef ScrollType
-#endif
 enum class ScrollType {
   TOP_LEFT_ = ATK_SCROLL_TOP_LEFT,
   BOTTOM_RIGHT_ = ATK_SCROLL_BOTTOM_RIGHT,
@@ -396,9 +381,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(StateType)
-#undef StateType
-#endif
 enum class StateType {
   INVALID_ = ATK_STATE_INVALID,
   ACTIVE_ = ATK_STATE_ACTIVE,
@@ -476,9 +458,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(TextAttribute)
-#undef TextAttribute
-#endif
 enum class TextAttribute {
   INVALID_ = ATK_TEXT_ATTR_INVALID,
   LEFT_MARGIN_ = ATK_TEXT_ATTR_LEFT_MARGIN,
@@ -542,9 +521,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(TextBoundary)
-#undef TextBoundary
-#endif
 enum class TextBoundary {
   CHAR_ = ATK_TEXT_BOUNDARY_CHAR,
   WORD_START_ = ATK_TEXT_BOUNDARY_WORD_START,
@@ -585,9 +561,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(TextClipType)
-#undef TextClipType
-#endif
 enum class TextClipType {
   NONE_ = ATK_TEXT_CLIP_NONE,
   MIN_ = ATK_TEXT_CLIP_MIN,
@@ -625,9 +598,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(TextGranularity)
-#undef TextGranularity
-#endif
 enum class TextGranularity {
   CHAR_ = ATK_TEXT_GRANULARITY_CHAR,
   WORD_ = ATK_TEXT_GRANULARITY_WORD,
@@ -666,9 +636,6 @@ namespace repository {
 
 namespace Atk {
 
-#if defined(ValueType)
-#undef ValueType
-#endif
 enum class ValueType {
   VERY_WEAK_ = ATK_VALUE_VERY_WEAK,
   WEAK_ = ATK_VALUE_WEAK,

@@ -9,9 +9,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(AllocatorFlags)
-#undef AllocatorFlags
-#endif
 enum class AllocatorFlags {
   CUSTOM_ALLOC_ = GST_ALLOCATOR_FLAG_CUSTOM_ALLOC,
   LAST_ = GST_ALLOCATOR_FLAG_LAST,
@@ -47,9 +44,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(BinFlags)
-#undef BinFlags
-#endif
 enum class BinFlags {
   NO_RESYNC_ = GST_BIN_FLAG_NO_RESYNC,
   STREAMS_AWARE_ = GST_BIN_FLAG_STREAMS_AWARE,
@@ -86,9 +80,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(BufferCopyFlags)
-#undef BufferCopyFlags
-#endif
 enum class BufferCopyFlags {
   NONE_ = GST_BUFFER_COPY_NONE,
   FLAGS_ = GST_BUFFER_COPY_FLAGS,
@@ -129,9 +120,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(BufferFlags)
-#undef BufferFlags
-#endif
 enum class BufferFlags {
   LIVE_ = GST_BUFFER_FLAG_LIVE,
   DECODE_ONLY_ = GST_BUFFER_FLAG_DECODE_ONLY,
@@ -179,9 +167,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(BufferPoolAcquireFlags)
-#undef BufferPoolAcquireFlags
-#endif
 enum class BufferPoolAcquireFlags {
   NONE_ = GST_BUFFER_POOL_ACQUIRE_FLAG_NONE,
   KEY_UNIT_ = GST_BUFFER_POOL_ACQUIRE_FLAG_KEY_UNIT,
@@ -220,9 +205,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(BusFlags)
-#undef BusFlags
-#endif
 enum class BusFlags {
   FLUSHING_ = GST_BUS_FLUSHING,
   FLAG_LAST_ = GST_BUS_FLAG_LAST,
@@ -258,9 +240,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(CapsFlags)
-#undef CapsFlags
-#endif
 enum class CapsFlags {
   ANY_ = GST_CAPS_FLAG_ANY,
 };
@@ -295,9 +274,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(ClockFlags)
-#undef ClockFlags
-#endif
 enum class ClockFlags {
   CAN_DO_SINGLE_SYNC_ = GST_CLOCK_FLAG_CAN_DO_SINGLE_SYNC,
   CAN_DO_SINGLE_ASYNC_ = GST_CLOCK_FLAG_CAN_DO_SINGLE_ASYNC,
@@ -339,9 +315,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(DebugColorFlags)
-#undef DebugColorFlags
-#endif
 enum class DebugColorFlags {
   FG_BLACK_ = GST_DEBUG_FG_BLACK,
   FG_RED_ = GST_DEBUG_FG_RED,
@@ -393,9 +366,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(DebugGraphDetails)
-#undef DebugGraphDetails
-#endif
 enum class DebugGraphDetails {
   MEDIA_TYPE_ = GST_DEBUG_GRAPH_SHOW_MEDIA_TYPE,
   CAPS_DETAILS_ = GST_DEBUG_GRAPH_SHOW_CAPS_DETAILS,
@@ -436,9 +406,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(ElementFlags)
-#undef ElementFlags
-#endif
 enum class ElementFlags {
   LOCKED_STATE_ = GST_ELEMENT_FLAG_LOCKED_STATE,
   SINK_ = GST_ELEMENT_FLAG_SINK,
@@ -479,9 +446,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(EventTypeFlags)
-#undef EventTypeFlags
-#endif
 enum class EventTypeFlags {
   UPSTREAM_ = GST_EVENT_TYPE_UPSTREAM,
   DOWNSTREAM_ = GST_EVENT_TYPE_DOWNSTREAM,
@@ -520,9 +484,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(GapFlags)
-#undef GapFlags
-#endif
 enum class GapFlags {
   DATA_ = GST_GAP_FLAG_MISSING_DATA,
 };
@@ -557,9 +518,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(LockFlags)
-#undef LockFlags
-#endif
 enum class LockFlags {
   READ_ = GST_LOCK_FLAG_READ,
   WRITE_ = GST_LOCK_FLAG_WRITE,
@@ -597,9 +555,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(MapFlags)
-#undef MapFlags
-#endif
 enum class MapFlags {
   READ_ = GST_MAP_READ,
   WRITE_ = GST_MAP_WRITE,
@@ -636,9 +591,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(MemoryFlags)
-#undef MemoryFlags
-#endif
 enum class MemoryFlags {
   READONLY_ = GST_MEMORY_FLAG_READONLY,
   NO_SHARE_ = GST_MEMORY_FLAG_NO_SHARE,
@@ -679,9 +631,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(MessageType)
-#undef MessageType
-#endif
 enum class MessageType {
   UNKNOWN_ = GST_MESSAGE_UNKNOWN,
   EOS_ = GST_MESSAGE_EOS,
@@ -757,9 +706,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(MetaFlags)
-#undef MetaFlags
-#endif
 enum class MetaFlags {
   NONE_ = GST_META_FLAG_NONE,
   READONLY_ = GST_META_FLAG_READONLY,
@@ -798,9 +744,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(MiniObjectFlags)
-#undef MiniObjectFlags
-#endif
 enum class MiniObjectFlags {
   LOCKABLE_ = GST_MINI_OBJECT_FLAG_LOCKABLE,
   LOCK_READONLY_ = GST_MINI_OBJECT_FLAG_LOCK_READONLY,
@@ -838,9 +781,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(ObjectFlags)
-#undef ObjectFlags
-#endif
 enum class ObjectFlags {
   MAY_BE_LEAKED_ = GST_OBJECT_FLAG_MAY_BE_LEAKED,
   LAST_ = GST_OBJECT_FLAG_LAST,
@@ -876,9 +816,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PadFlags)
-#undef PadFlags
-#endif
 enum class PadFlags {
   BLOCKED_ = GST_PAD_FLAG_BLOCKED,
   FLUSHING_ = GST_PAD_FLAG_FLUSHING,
@@ -926,9 +863,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PadLinkCheck)
-#undef PadLinkCheck
-#endif
 enum class PadLinkCheck {
   NOTHING_ = GST_PAD_LINK_CHECK_NOTHING,
   HIERARCHY_ = GST_PAD_LINK_CHECK_HIERARCHY,
@@ -968,9 +902,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PadProbeType)
-#undef PadProbeType
-#endif
 enum class PadProbeType {
   INVALID_ = GST_PAD_PROBE_TYPE_INVALID,
   IDLE_ = GST_PAD_PROBE_TYPE_IDLE,
@@ -1026,9 +957,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PadTemplateFlags)
-#undef PadTemplateFlags
-#endif
 enum class PadTemplateFlags {
   LAST_ = GST_PAD_TEMPLATE_FLAG_LAST,
 };
@@ -1063,9 +991,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(ParseFlags)
-#undef ParseFlags
-#endif
 enum class ParseFlags {
   NONE_ = GST_PARSE_FLAG_NONE,
   FATAL_ERRORS_ = GST_PARSE_FLAG_FATAL_ERRORS,
@@ -1103,9 +1028,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PipelineFlags)
-#undef PipelineFlags
-#endif
 enum class PipelineFlags {
   FIXED_CLOCK_ = GST_PIPELINE_FLAG_FIXED_CLOCK,
   LAST_ = GST_PIPELINE_FLAG_LAST,
@@ -1141,9 +1063,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PluginAPIFlags)
-#undef PluginAPIFlags
-#endif
 enum class PluginAPIFlags {
   MEMBERS_ = GST_PLUGIN_API_FLAG_IGNORE_ENUM_MEMBERS,
 };
@@ -1178,9 +1097,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PluginDependencyFlags)
-#undef PluginDependencyFlags
-#endif
 enum class PluginDependencyFlags {
   NONE_ = GST_PLUGIN_DEPENDENCY_FLAG_NONE,
   RECURSE_ = GST_PLUGIN_DEPENDENCY_FLAG_RECURSE,
@@ -1220,9 +1136,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(PluginFlags)
-#undef PluginFlags
-#endif
 enum class PluginFlags {
   CACHED_ = GST_PLUGIN_FLAG_CACHED,
   BLACKLISTED_ = GST_PLUGIN_FLAG_BLACKLISTED,
@@ -1258,9 +1171,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(QueryTypeFlags)
-#undef QueryTypeFlags
-#endif
 enum class QueryTypeFlags {
   UPSTREAM_ = GST_QUERY_TYPE_UPSTREAM,
   DOWNSTREAM_ = GST_QUERY_TYPE_DOWNSTREAM,
@@ -1297,9 +1207,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(SchedulingFlags)
-#undef SchedulingFlags
-#endif
 enum class SchedulingFlags {
   SEEKABLE_ = GST_SCHEDULING_FLAG_SEEKABLE,
   SEQUENTIAL_ = GST_SCHEDULING_FLAG_SEQUENTIAL,
@@ -1336,9 +1243,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(SeekFlags)
-#undef SeekFlags
-#endif
 enum class SeekFlags {
   NONE_ = GST_SEEK_FLAG_NONE,
   FLUSH_ = GST_SEEK_FLAG_FLUSH,
@@ -1386,9 +1290,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(SegmentFlags)
-#undef SegmentFlags
-#endif
 enum class SegmentFlags {
   NONE_ = GST_SEGMENT_FLAG_NONE,
   RESET_ = GST_SEGMENT_FLAG_RESET,
@@ -1430,9 +1331,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(SerializeFlags)
-#undef SerializeFlags
-#endif
 enum class SerializeFlags {
   NONE_ = GST_SERIALIZE_FLAG_NONE,
   BACKWARD_COMPAT_ = GST_SERIALIZE_FLAG_BACKWARD_COMPAT,
@@ -1468,9 +1366,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(StackTraceFlags)
-#undef StackTraceFlags
-#endif
 enum class StackTraceFlags {
   NONE_ = GST_STACK_TRACE_SHOW_NONE,
   FULL_ = GST_STACK_TRACE_SHOW_FULL,
@@ -1506,9 +1401,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(StreamFlags)
-#undef StreamFlags
-#endif
 enum class StreamFlags {
   NONE_ = GST_STREAM_FLAG_NONE,
   SPARSE_ = GST_STREAM_FLAG_SPARSE,
@@ -1546,9 +1438,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(StreamType)
-#undef StreamType
-#endif
 enum class StreamType {
   UNKNOWN_ = GST_STREAM_TYPE_UNKNOWN,
   AUDIO_ = GST_STREAM_TYPE_AUDIO,
@@ -1587,9 +1476,6 @@ namespace repository {
 
 namespace Gst {
 
-#if defined(TracerValueFlags)
-#undef TracerValueFlags
-#endif
 enum class TracerValueFlags {
   NONE_ = GST_TRACER_VALUE_FLAGS_NONE,
   OPTIONAL_ = GST_TRACER_VALUE_FLAGS_OPTIONAL,

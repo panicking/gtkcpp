@@ -9,9 +9,6 @@ namespace repository {
 
 namespace JavaScriptCore {
 
-#if defined(ValuePropertyFlags)
-#undef ValuePropertyFlags
-#endif
 enum class ValuePropertyFlags {
   CONFIGURABLE_ = JSC_VALUE_PROPERTY_CONFIGURABLE,
   ENUMERABLE_ = JSC_VALUE_PROPERTY_ENUMERABLE,

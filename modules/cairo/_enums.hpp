@@ -9,9 +9,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(Status)
-#undef Status
-#endif
 enum class Status {
   SUCCESS_ = CAIRO_STATUS_SUCCESS,
   NO_MEMORY_ = CAIRO_STATUS_NO_MEMORY,
@@ -84,9 +81,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(Content)
-#undef Content
-#endif
 enum class Content {
   COLOR_ = CAIRO_CONTENT_COLOR,
   ALPHA_ = CAIRO_CONTENT_ALPHA,
@@ -123,9 +117,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(Operator)
-#undef Operator
-#endif
 enum class Operator {
   CLEAR_ = CAIRO_OPERATOR_CLEAR,
   SOURCE_ = CAIRO_OPERATOR_SOURCE,
@@ -188,9 +179,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(Antialias)
-#undef Antialias
-#endif
 enum class Antialias {
   DEFAULT_ = CAIRO_ANTIALIAS_DEFAULT,
   NONE_ = CAIRO_ANTIALIAS_NONE,
@@ -231,9 +219,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(FillRule)
-#undef FillRule
-#endif
 enum class FillRule {
   WINDING_ = CAIRO_FILL_RULE_WINDING,
   EVEN_ODD_ = CAIRO_FILL_RULE_EVEN_ODD,
@@ -269,9 +254,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(LineCap)
-#undef LineCap
-#endif
 enum class LineCap {
   BUTT_ = CAIRO_LINE_CAP_BUTT,
   ROUND_ = CAIRO_LINE_CAP_ROUND,
@@ -308,9 +290,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(LineJoin)
-#undef LineJoin
-#endif
 enum class LineJoin {
   MITER_ = CAIRO_LINE_JOIN_MITER,
   ROUND_ = CAIRO_LINE_JOIN_ROUND,
@@ -347,9 +326,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(TextClusterFlags)
-#undef TextClusterFlags
-#endif
 enum class TextClusterFlags {
   BACKWARD_ = CAIRO_TEXT_CLUSTER_FLAG_BACKWARD,
 };
@@ -384,9 +360,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(FontSlant)
-#undef FontSlant
-#endif
 enum class FontSlant {
   NORMAL_ = CAIRO_FONT_SLANT_NORMAL,
   ITALIC_ = CAIRO_FONT_SLANT_ITALIC,
@@ -423,9 +396,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(FontWeight)
-#undef FontWeight
-#endif
 enum class FontWeight {
   NORMAL_ = CAIRO_FONT_WEIGHT_NORMAL,
   BOLD_ = CAIRO_FONT_WEIGHT_BOLD,
@@ -461,9 +431,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(SubpixelOrder)
-#undef SubpixelOrder
-#endif
 enum class SubpixelOrder {
   DEFAULT_ = CAIRO_SUBPIXEL_ORDER_DEFAULT,
   RGB_ = CAIRO_SUBPIXEL_ORDER_RGB,
@@ -502,9 +469,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(HintStyle)
-#undef HintStyle
-#endif
 enum class HintStyle {
   DEFAULT_ = CAIRO_HINT_STYLE_DEFAULT,
   NONE_ = CAIRO_HINT_STYLE_NONE,
@@ -543,9 +507,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(HintMetrics)
-#undef HintMetrics
-#endif
 enum class HintMetrics {
   DEFAULT_ = CAIRO_HINT_METRICS_DEFAULT,
   OFF_ = CAIRO_HINT_METRICS_OFF,
@@ -582,9 +543,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(FontType)
-#undef FontType
-#endif
 enum class FontType {
   TOY_ = CAIRO_FONT_TYPE_TOY,
   FT_ = CAIRO_FONT_TYPE_FT,
@@ -623,9 +581,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(PathDataType)
-#undef PathDataType
-#endif
 enum class PathDataType {
   MOVE_TO_ = CAIRO_PATH_MOVE_TO,
   LINE_TO_ = CAIRO_PATH_LINE_TO,
@@ -663,9 +618,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(DeviceType)
-#undef DeviceType
-#endif
 enum class DeviceType {
   DRM_ = CAIRO_DEVICE_TYPE_DRM,
   GL_ = CAIRO_DEVICE_TYPE_GL,
@@ -708,9 +660,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(SurfaceType)
-#undef SurfaceType
-#endif
 enum class SurfaceType {
   IMAGE_ = CAIRO_SURFACE_TYPE_IMAGE,
   PDF_ = CAIRO_SURFACE_TYPE_PDF,
@@ -769,9 +718,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(Format)
-#undef Format
-#endif
 enum class Format {
   INVALID_ = CAIRO_FORMAT_INVALID,
   ARGB32_ = CAIRO_FORMAT_ARGB32,
@@ -812,9 +758,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(PatternType)
-#undef PatternType
-#endif
 enum class PatternType {
   SOLID_ = CAIRO_PATTERN_TYPE_SOLID,
   SURFACE_ = CAIRO_PATTERN_TYPE_SURFACE,
@@ -854,9 +797,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(Extend)
-#undef Extend
-#endif
 enum class Extend {
   NONE_ = CAIRO_EXTEND_NONE,
   REPEAT_ = CAIRO_EXTEND_REPEAT,
@@ -894,9 +834,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(Filter)
-#undef Filter
-#endif
 enum class Filter {
   FAST_ = CAIRO_FILTER_FAST,
   GOOD_ = CAIRO_FILTER_GOOD,
@@ -936,9 +873,6 @@ namespace repository {
 
 namespace cairo {
 
-#if defined(RegionOverlap)
-#undef RegionOverlap
-#endif
 enum class RegionOverlap {
   IN_ = CAIRO_REGION_OVERLAP_IN,
   OUT_ = CAIRO_REGION_OVERLAP_OUT,
