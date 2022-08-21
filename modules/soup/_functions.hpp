@@ -166,7 +166,7 @@ GI_INLINE_DECL guint get_minor_version () noexcept;
 
 // GResource* soup_get_resource ();
 // ::GResource* soup_get_resource ();
-GI_INLINE_DECL Gio::Resource get_resource () noexcept;
+// IGNORE; marked ignore
 
 // gboolean soup_header_contains (const char* header, const char* token);
 // gboolean soup_header_contains (const char* header, const char* token);

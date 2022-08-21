@@ -55,7 +55,7 @@ static GI_INLINE_DECL Soup::Message new_from_uri (const std::string & method, So
 
 // void soup_message_content_sniffed (SoupMessage* msg, const char* content_type, GHashTable* params);
 // void soup_message_content_sniffed (::SoupMessage* msg, const char* content_type, ::GHashTable* params);
-GI_INLINE_DECL void content_sniffed (const std::string & content_type, const std::map<gpointer, gpointer> & params) noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_disable_feature (SoupMessage* msg, GType feature_type);
 // void soup_message_disable_feature (::SoupMessage* msg, GType feature_type);
@@ -63,7 +63,7 @@ GI_INLINE_DECL void disable_feature (GType feature_type) noexcept;
 
 // void soup_message_finished (SoupMessage* msg);
 // void soup_message_finished (::SoupMessage* msg);
-GI_INLINE_DECL void finished () noexcept;
+// IGNORE; marked ignore
 
 // SoupAddress* soup_message_get_address (SoupMessage* msg);
 // ::SoupAddress* soup_message_get_address (::SoupMessage* msg);
@@ -108,19 +108,19 @@ GI_INLINE_DECL Soup::URI get_uri () noexcept;
 
 // void soup_message_got_body (SoupMessage* msg);
 // void soup_message_got_body (::SoupMessage* msg);
-GI_INLINE_DECL void got_body () noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_got_chunk (SoupMessage* msg, SoupBuffer* chunk);
 // void soup_message_got_chunk (::SoupMessage* msg, ::SoupBuffer* chunk);
-GI_INLINE_DECL void got_chunk (Soup::Buffer chunk) noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_got_headers (SoupMessage* msg);
 // void soup_message_got_headers (::SoupMessage* msg);
-GI_INLINE_DECL void got_headers () noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_got_informational (SoupMessage* msg);
 // void soup_message_got_informational (::SoupMessage* msg);
-GI_INLINE_DECL void got_informational () noexcept;
+// IGNORE; marked ignore
 
 // gboolean soup_message_is_feature_disabled (SoupMessage* msg, GType feature_type);
 // gboolean soup_message_is_feature_disabled (::SoupMessage* msg, GType feature_type);
@@ -132,7 +132,7 @@ GI_INLINE_DECL bool is_keepalive () noexcept;
 
 // void soup_message_restarted (SoupMessage* msg);
 // void soup_message_restarted (::SoupMessage* msg);
-GI_INLINE_DECL void restarted () noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_set_chunk_allocator (SoupMessage* msg, SoupChunkAllocator allocator, gpointer user_data, GDestroyNotify destroy_notify);
 // void soup_message_set_chunk_allocator (::SoupMessage* msg,  allocator, void* user_data, GLib::DestroyNotify::cfunction_type destroy_notify);
@@ -191,11 +191,11 @@ GI_INLINE_DECL void set_uri (Soup::URI uri) noexcept;
 
 // void soup_message_starting (SoupMessage* msg);
 // void soup_message_starting (::SoupMessage* msg);
-GI_INLINE_DECL void starting () noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_wrote_body (SoupMessage* msg);
 // void soup_message_wrote_body (::SoupMessage* msg);
-GI_INLINE_DECL void wrote_body () noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_wrote_body_data (SoupMessage* msg, SoupBuffer* chunk);
 // void soup_message_wrote_body_data (::SoupMessage* msg, ::SoupBuffer* chunk);
@@ -203,15 +203,15 @@ GI_INLINE_DECL void wrote_body_data (Soup::Buffer chunk) noexcept;
 
 // void soup_message_wrote_chunk (SoupMessage* msg);
 // void soup_message_wrote_chunk (::SoupMessage* msg);
-GI_INLINE_DECL void wrote_chunk () noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_wrote_headers (SoupMessage* msg);
 // void soup_message_wrote_headers (::SoupMessage* msg);
-GI_INLINE_DECL void wrote_headers () noexcept;
+// IGNORE; marked ignore
 
 // void soup_message_wrote_informational (SoupMessage* msg);
 // void soup_message_wrote_informational (::SoupMessage* msg);
-GI_INLINE_DECL void wrote_informational () noexcept;
+// IGNORE; marked ignore
 
 gi::property_proxy<Soup::URI, base::MessageBase> property_first_party()
 { return gi::property_proxy<Soup::URI, base::MessageBase> (*this, "first-party"); }

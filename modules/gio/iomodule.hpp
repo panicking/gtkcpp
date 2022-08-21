@@ -39,12 +39,12 @@ static GI_INLINE_DECL Gio::IOModule new_ (const std::string & filename) noexcept
 // char** g_io_module_query ();
 // IGNORE; marked ignore
 
-// void g_io_module_load (GIOModule* module);
-// void g_io_module_load (::GIOModule* module);
+// void g_io_module_load (GIOModule* module_);
+// void g_io_module_load (::GIOModule* module_);
 // IGNORE; marked ignore
 
-// void g_io_module_unload (GIOModule* module);
-// void g_io_module_unload (::GIOModule* module);
+// void g_io_module_unload (GIOModule* module_);
+// void g_io_module_unload (::GIOModule* module_);
 // IGNORE; marked ignore
 
 }; // class

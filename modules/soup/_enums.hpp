@@ -695,7 +695,7 @@ namespace repository {
 
 namespace Soup {
 
-enum class Soup_status {
+enum class GenericStatus {
   NONE_ = SOUP_STATUS_NONE,
   CANCELLED_ = SOUP_STATUS_CANCELLED,
   CANT_RESOLVE_ = SOUP_STATUS_CANT_RESOLVE,
@@ -772,12 +772,12 @@ namespace gi {
 
 namespace repository {
 
-template<> struct declare_ctype_of<Soup::Soup_status>
+template<> struct declare_ctype_of<Soup::GenericStatus>
 { typedef SoupStatus type; }; 
 template<> struct declare_cpptype_of<SoupStatus>
-{ typedef Soup::Soup_status type; }; 
+{ typedef Soup::GenericStatus type; }; 
 
-template<> struct declare_gtype_of<Soup::Soup_status>
+template<> struct declare_gtype_of<Soup::GenericStatus>
 { static GType get_type() { return soup_status_get_type(); } };
 
 

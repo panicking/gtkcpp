@@ -367,6 +367,10 @@ guint get_minor_version () noexcept
   return _temp_ret;
 }
 
+// GResource* soup_get_resource ();
+// ::GResource* soup_get_resource ();
+// IGNORE; marked ignore
+
 // gboolean soup_header_contains (const char* header, const char* token);
 // gboolean soup_header_contains (const char* header, const char* token);
 bool header_contains (const std::string & header, const std::string & token) noexcept

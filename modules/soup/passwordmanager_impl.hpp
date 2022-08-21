@@ -13,51 +13,11 @@ namespace base {
 
 // void soup_password_manager_get_passwords_async (SoupPasswordManager* password_manager, SoupMessage* msg, SoupAuth* auth, gboolean retrying, GMainContext* async_context, GCancellable* cancellable, SoupPasswordManagerCallback callback, gpointer user_data);
 // void soup_password_manager_get_passwords_async (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, gboolean retrying, ::GMainContext* async_context, ::GCancellable* cancellable, Soup::PasswordManagerCallback::cfunction_type callback, void* user_data);
-void base::PasswordManagerBase::get_passwords_async (Soup::Message msg, Soup::Auth auth, gboolean retrying, GLib::MainContext async_context, Gio::Cancellable cancellable, Soup::PasswordManagerCallback callback) noexcept
-{
-  typedef void (*call_wrap_t) (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, gboolean retrying, ::GMainContext* async_context, ::GCancellable* cancellable, Soup::PasswordManagerCallback::cfunction_type callback, void* user_data);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_password_manager_get_passwords_async;
-  auto callback_wrap_ = callback ? unwrap (std::move (callback), gi::scope_async) : nullptr;
-  auto cancellable_to_c = gi::unwrap (cancellable, gi::transfer_none, gi::direction_in);
-  auto async_context_to_c = gi::unwrap (async_context, gi::transfer_none, gi::direction_in);
-  auto retrying_to_c = retrying;
-  auto auth_to_c = gi::unwrap (auth, gi::transfer_none, gi::direction_in);
-  auto msg_to_c = gi::unwrap (msg, gi::transfer_none, gi::direction_in);
-  call_wrap_v ((::SoupPasswordManager*) (gobj_()), (::SoupMessage*) (msg_to_c), (::SoupAuth*) (auth_to_c), (gboolean) (retrying_to_c), (::GMainContext*) (async_context_to_c), (::GCancellable*) (cancellable_to_c), (Soup::PasswordManagerCallback::cfunction_type) (callback_wrap_ ? &callback_wrap_->wrapper : nullptr), (void*) (callback_wrap_));
-}
-void base::PasswordManagerBase::get_passwords_async (Soup::Message msg, Soup::Auth auth, gboolean retrying, GLib::MainContext async_context, Soup::PasswordManagerCallback callback) noexcept
-{
-  typedef void (*call_wrap_t) (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, gboolean retrying, ::GMainContext* async_context, ::GCancellable* cancellable, Soup::PasswordManagerCallback::cfunction_type callback, void* user_data);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_password_manager_get_passwords_async;
-  auto callback_wrap_ = callback ? unwrap (std::move (callback), gi::scope_async) : nullptr;
-  auto cancellable_to_c = nullptr;
-  auto async_context_to_c = gi::unwrap (async_context, gi::transfer_none, gi::direction_in);
-  auto retrying_to_c = retrying;
-  auto auth_to_c = gi::unwrap (auth, gi::transfer_none, gi::direction_in);
-  auto msg_to_c = gi::unwrap (msg, gi::transfer_none, gi::direction_in);
-  call_wrap_v ((::SoupPasswordManager*) (gobj_()), (::SoupMessage*) (msg_to_c), (::SoupAuth*) (auth_to_c), (gboolean) (retrying_to_c), (::GMainContext*) (async_context_to_c), (::GCancellable*) (cancellable_to_c), (Soup::PasswordManagerCallback::cfunction_type) (callback_wrap_ ? &callback_wrap_->wrapper : nullptr), (void*) (callback_wrap_));
-}
+// IGNORE; marked ignore
 
 // void soup_password_manager_get_passwords_sync (SoupPasswordManager* password_manager, SoupMessage* msg, SoupAuth* auth, GCancellable* cancellable);
 // void soup_password_manager_get_passwords_sync (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, ::GCancellable* cancellable);
-void base::PasswordManagerBase::get_passwords_sync (Soup::Message msg, Soup::Auth auth, Gio::Cancellable cancellable) noexcept
-{
-  typedef void (*call_wrap_t) (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, ::GCancellable* cancellable);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_password_manager_get_passwords_sync;
-  auto cancellable_to_c = gi::unwrap (cancellable, gi::transfer_none, gi::direction_in);
-  auto auth_to_c = gi::unwrap (auth, gi::transfer_none, gi::direction_in);
-  auto msg_to_c = gi::unwrap (msg, gi::transfer_none, gi::direction_in);
-  call_wrap_v ((::SoupPasswordManager*) (gobj_()), (::SoupMessage*) (msg_to_c), (::SoupAuth*) (auth_to_c), (::GCancellable*) (cancellable_to_c));
-}
-void base::PasswordManagerBase::get_passwords_sync (Soup::Message msg, Soup::Auth auth) noexcept
-{
-  typedef void (*call_wrap_t) (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, ::GCancellable* cancellable);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_password_manager_get_passwords_sync;
-  auto cancellable_to_c = nullptr;
-  auto auth_to_c = gi::unwrap (auth, gi::transfer_none, gi::direction_in);
-  auto msg_to_c = gi::unwrap (msg, gi::transfer_none, gi::direction_in);
-  call_wrap_v ((::SoupPasswordManager*) (gobj_()), (::SoupMessage*) (msg_to_c), (::SoupAuth*) (auth_to_c), (::GCancellable*) (cancellable_to_c));
-}
+// IGNORE; marked ignore
 
 
 } // namespace base

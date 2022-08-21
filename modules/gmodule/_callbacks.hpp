@@ -10,13 +10,13 @@ namespace repository {
 namespace GModule {
 
 
-// typedef const gchar* (*GModuleCheckInit) (GModule* module);
-// typedef const char* (*GModuleCheckInit) ( module);
+// typedef const gchar* (*GModuleCheckInit) (GModule* module_);
+// typedef const char* (*GModuleCheckInit) ( module_);
 // SKIP; invalid callback return transfer none
 
-// typedef void (*GModuleUnload) (GModule* module);
-// typedef void (*GModuleUnload) ( module);
-// SKIP; module type  not supported, not a callback since no user_data
+// typedef void (*GModuleUnload) (GModule* module_);
+// typedef void (*GModuleUnload) ( module_);
+// SKIP; module_ type  not supported, not a callback since no user_data
 
 } // namespace GModule
 

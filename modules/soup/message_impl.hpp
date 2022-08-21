@@ -3,8 +3,6 @@
 #ifndef _GI_SOUP_MESSAGE_IMPL_HPP_
 #define _GI_SOUP_MESSAGE_IMPL_HPP_
 
-#include <string.h>
-
 namespace gi {
 
 namespace repository {
@@ -47,16 +45,7 @@ Soup::Message base::MessageBase::new_from_uri (const std::string & method, Soup:
 
 // void soup_message_content_sniffed (SoupMessage* msg, const char* content_type, GHashTable* params);
 // void soup_message_content_sniffed (::SoupMessage* msg, const char* content_type, ::GHashTable* params);
-void base::MessageBase::content_sniffed (const std::string & content_type, const std::map<gpointer, gpointer> & params) noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg, const char* content_type, ::GHashTable* params);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_content_sniffed;
-  auto & params_i = params;
-  auto params_w = unwrap (params_i, gi::transfer_none, direction_in);
-  auto params_to_c = params_w.gobj_(false);
-  auto content_type_to_c = gi::unwrap (content_type, gi::transfer_none, gi::direction_in);
-  call_wrap_v ((::SoupMessage*) (gobj_()), (const char*) (content_type_to_c), (::GHashTable*) (params_to_c));
-}
+// IGNORE; marked ignore
 
 // void soup_message_disable_feature (SoupMessage* msg, GType feature_type);
 // void soup_message_disable_feature (::SoupMessage* msg, GType feature_type);
@@ -70,12 +59,7 @@ void base::MessageBase::disable_feature (GType feature_type) noexcept
 
 // void soup_message_finished (SoupMessage* msg);
 // void soup_message_finished (::SoupMessage* msg);
-void base::MessageBase::finished () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_finished;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // SoupAddress* soup_message_get_address (SoupMessage* msg);
 // ::SoupAddress* soup_message_get_address (::SoupMessage* msg);
@@ -192,40 +176,19 @@ Soup::URI base::MessageBase::get_uri () noexcept
 
 // void soup_message_got_body (SoupMessage* msg);
 // void soup_message_got_body (::SoupMessage* msg);
-void base::MessageBase::got_body () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_got_body;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // void soup_message_got_chunk (SoupMessage* msg, SoupBuffer* chunk);
 // void soup_message_got_chunk (::SoupMessage* msg, ::SoupBuffer* chunk);
-void base::MessageBase::got_chunk (Soup::Buffer chunk) noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg, ::SoupBuffer* chunk);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_got_chunk;
-  auto chunk_to_c = gi::unwrap (chunk, gi::transfer_none, gi::direction_in);
-  call_wrap_v ((::SoupMessage*) (gobj_()), (::SoupBuffer*) (chunk_to_c));
-}
+// IGNORE; marked ignore
 
 // void soup_message_got_headers (SoupMessage* msg);
 // void soup_message_got_headers (::SoupMessage* msg);
-void base::MessageBase::got_headers () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_got_headers;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // void soup_message_got_informational (SoupMessage* msg);
 // void soup_message_got_informational (::SoupMessage* msg);
-void base::MessageBase::got_informational () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_got_informational;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // gboolean soup_message_is_feature_disabled (SoupMessage* msg, GType feature_type);
 // gboolean soup_message_is_feature_disabled (::SoupMessage* msg, GType feature_type);
@@ -250,12 +213,7 @@ bool base::MessageBase::is_keepalive () noexcept
 
 // void soup_message_restarted (SoupMessage* msg);
 // void soup_message_restarted (::SoupMessage* msg);
-void base::MessageBase::restarted () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_restarted;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // void soup_message_set_chunk_allocator (SoupMessage* msg, SoupChunkAllocator allocator, gpointer user_data, GDestroyNotify destroy_notify);
 // void soup_message_set_chunk_allocator (::SoupMessage* msg,  allocator, void* user_data, GLib::DestroyNotify::cfunction_type destroy_notify);
@@ -422,21 +380,11 @@ void base::MessageBase::set_uri (Soup::URI uri) noexcept
 
 // void soup_message_starting (SoupMessage* msg);
 // void soup_message_starting (::SoupMessage* msg);
-void base::MessageBase::starting () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_starting;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // void soup_message_wrote_body (SoupMessage* msg);
 // void soup_message_wrote_body (::SoupMessage* msg);
-void base::MessageBase::wrote_body () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_wrote_body;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // void soup_message_wrote_body_data (SoupMessage* msg, SoupBuffer* chunk);
 // void soup_message_wrote_body_data (::SoupMessage* msg, ::SoupBuffer* chunk);
@@ -450,30 +398,15 @@ void base::MessageBase::wrote_body_data (Soup::Buffer chunk) noexcept
 
 // void soup_message_wrote_chunk (SoupMessage* msg);
 // void soup_message_wrote_chunk (::SoupMessage* msg);
-void base::MessageBase::wrote_chunk () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_wrote_chunk;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // void soup_message_wrote_headers (SoupMessage* msg);
 // void soup_message_wrote_headers (::SoupMessage* msg);
-void base::MessageBase::wrote_headers () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_wrote_headers;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 // void soup_message_wrote_informational (SoupMessage* msg);
 // void soup_message_wrote_informational (::SoupMessage* msg);
-void base::MessageBase::wrote_informational () noexcept
-{
-  typedef void (*call_wrap_t) (::SoupMessage* msg);
-  call_wrap_t call_wrap_v = (call_wrap_t) soup_message_wrote_informational;
-  call_wrap_v ((::SoupMessage*) (gobj_()));
-}
+// IGNORE; marked ignore
 
 static const char* _field_method_get (const ::SoupMessage* obj) { return (const char*) obj->method; }
 // const char* Message::method (const ::SoupMessage* obj);

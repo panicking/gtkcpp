@@ -26,8 +26,8 @@ class PixbufModule;
 // typedef void (*GdkPixbufModuleFillInfoFunc) (::GdkPixbufFormat* info);
 // SKIP; not a callback since no user_data
 
-// typedef void (*GdkPixbufModuleFillVtableFunc) (GdkPixbufModule* module);
-// typedef void (*GdkPixbufModuleFillVtableFunc) (::GdkPixbufModule* module);
+// typedef void (*GdkPixbufModuleFillVtableFunc) (GdkPixbufModule* module_);
+// typedef void (*GdkPixbufModuleFillVtableFunc) (::GdkPixbufModule* module_);
 // SKIP; not a callback since no user_data
 
 // typedef gboolean (*GdkPixbufModuleIncrementLoadFunc) (gpointer context, const guchar* buf, guint size, GError ** error);

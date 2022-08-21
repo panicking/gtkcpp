@@ -41,32 +41,32 @@ GI_INLINE_DECL GObject::TypePlugin interface_ (gi::interface_tag<GObject::TypePl
 
 GI_INLINE_DECL operator GObject::TypePlugin ();
 
-// void g_type_module_add_interface (GTypeModule* module, GType instance_type, GType interface_type, const GInterfaceInfo* interface_info);
-// void g_type_module_add_interface (::GTypeModule* module, GType instance_type, GType interface_type, const ::GInterfaceInfo* interface_info);
+// void g_type_module_add_interface (GTypeModule* module_, GType instance_type, GType interface_type, const GInterfaceInfo* interface_info);
+// void g_type_module_add_interface (::GTypeModule* module_, GType instance_type, GType interface_type, const ::GInterfaceInfo* interface_info);
 GI_INLINE_DECL void add_interface (GType instance_type, GType interface_type, const GObject::InterfaceInfo & interface_info) noexcept;
 
-// GType g_type_module_register_enum (GTypeModule* module, const gchar* name, const GEnumValue* const_static_values);
-// GType g_type_module_register_enum (::GTypeModule* module, const char* name, const ::GEnumValue* const_static_values);
+// GType g_type_module_register_enum (GTypeModule* module_, const gchar* name, const GEnumValue* const_static_values);
+// GType g_type_module_register_enum (::GTypeModule* module_, const char* name, const ::GEnumValue* const_static_values);
 GI_INLINE_DECL GType register_enum (const std::string & name, const GObject::EnumValue & const_static_values) noexcept;
 
-// GType g_type_module_register_flags (GTypeModule* module, const gchar* name, const GFlagsValue* const_static_values);
-// GType g_type_module_register_flags (::GTypeModule* module, const char* name, const ::GFlagsValue* const_static_values);
+// GType g_type_module_register_flags (GTypeModule* module_, const gchar* name, const GFlagsValue* const_static_values);
+// GType g_type_module_register_flags (::GTypeModule* module_, const char* name, const ::GFlagsValue* const_static_values);
 GI_INLINE_DECL GType register_flags (const std::string & name, const GObject::FlagsValue & const_static_values) noexcept;
 
-// GType g_type_module_register_type (GTypeModule* module, GType parent_type, const gchar* type_name, const GTypeInfo* type_info, GTypeFlags flags);
-// GType g_type_module_register_type (::GTypeModule* module, GType parent_type, const char* type_name, const ::GTypeInfo* type_info, ::GTypeFlags flags);
+// GType g_type_module_register_type (GTypeModule* module_, GType parent_type, const gchar* type_name, const GTypeInfo* type_info, GTypeFlags flags);
+// GType g_type_module_register_type (::GTypeModule* module_, GType parent_type, const char* type_name, const ::GTypeInfo* type_info, ::GTypeFlags flags);
 GI_INLINE_DECL GType register_type (GType parent_type, const std::string & type_name, const GObject::TypeInfo & type_info, GObject::TypeFlags flags) noexcept;
 
-// void g_type_module_set_name (GTypeModule* module, const gchar* name);
-// void g_type_module_set_name (::GTypeModule* module, const char* name);
+// void g_type_module_set_name (GTypeModule* module_, const gchar* name);
+// void g_type_module_set_name (::GTypeModule* module_, const char* name);
 GI_INLINE_DECL void set_name (const std::string & name) noexcept;
 
-// void g_type_module_unuse (GTypeModule* module);
-// void g_type_module_unuse (::GTypeModule* module);
+// void g_type_module_unuse (GTypeModule* module_);
+// void g_type_module_unuse (::GTypeModule* module_);
 GI_INLINE_DECL void unuse () noexcept;
 
-// gboolean g_type_module_use (GTypeModule* module);
-// gboolean g_type_module_use (::GTypeModule* module);
+// gboolean g_type_module_use (GTypeModule* module_);
+// gboolean g_type_module_use (::GTypeModule* module_);
 GI_INLINE_DECL bool use () noexcept;
 
 // guint TypeModule::use_count (const ::GTypeModule* obj);
@@ -145,12 +145,12 @@ typedef ::GTypeModuleClass class_type;
 protected:
 static GI_INLINE_DECL void class_init (gpointer class_struct, gpointer );
 
-// gboolean TypeModule::load (GTypeModule* module);
-// gboolean TypeModule::load (::GTypeModule* module);
+// gboolean TypeModule::load (GTypeModule* module_);
+// gboolean TypeModule::load (::GTypeModule* module_);
 virtual bool load_ () noexcept = 0;
 
-// void TypeModule::unload (GTypeModule* module);
-// void TypeModule::unload (::GTypeModule* module);
+// void TypeModule::unload (GTypeModule* module_);
+// void TypeModule::unload (::GTypeModule* module_);
 virtual void unload_ () noexcept = 0;
 
 
@@ -176,12 +176,12 @@ protected:
 // disambiguation helper types
 
 
-// gboolean TypeModule::load (GTypeModule* module);
-// gboolean TypeModule::load (::GTypeModule* module);
+// gboolean TypeModule::load (GTypeModule* module_);
+// gboolean TypeModule::load (::GTypeModule* module_);
 GI_INLINE_DECL bool load_ () noexcept override;
 
-// void TypeModule::unload (GTypeModule* module);
-// void TypeModule::unload (::GTypeModule* module);
+// void TypeModule::unload (GTypeModule* module_);
+// void TypeModule::unload (::GTypeModule* module_);
 GI_INLINE_DECL void unload_ () noexcept override;
 
 

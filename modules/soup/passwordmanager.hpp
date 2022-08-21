@@ -35,13 +35,11 @@ static GType get_type_ () G_GNUC_CONST { return soup_password_manager_get_type()
 
 // void soup_password_manager_get_passwords_async (SoupPasswordManager* password_manager, SoupMessage* msg, SoupAuth* auth, gboolean retrying, GMainContext* async_context, GCancellable* cancellable, SoupPasswordManagerCallback callback, gpointer user_data);
 // void soup_password_manager_get_passwords_async (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, gboolean retrying, ::GMainContext* async_context, ::GCancellable* cancellable, Soup::PasswordManagerCallback::cfunction_type callback, void* user_data);
-GI_INLINE_DECL void get_passwords_async (Soup::Message msg, Soup::Auth auth, gboolean retrying, GLib::MainContext async_context, Gio::Cancellable cancellable, Soup::PasswordManagerCallback callback) noexcept;
-GI_INLINE_DECL void get_passwords_async (Soup::Message msg, Soup::Auth auth, gboolean retrying, GLib::MainContext async_context, Soup::PasswordManagerCallback callback) noexcept;
+// IGNORE; marked ignore
 
 // void soup_password_manager_get_passwords_sync (SoupPasswordManager* password_manager, SoupMessage* msg, SoupAuth* auth, GCancellable* cancellable);
 // void soup_password_manager_get_passwords_sync (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, ::GCancellable* cancellable);
-GI_INLINE_DECL void get_passwords_sync (Soup::Message msg, Soup::Auth auth, Gio::Cancellable cancellable) noexcept;
-GI_INLINE_DECL void get_passwords_sync (Soup::Message msg, Soup::Auth auth) noexcept;
+// IGNORE; marked ignore
 
 }; // class
 
