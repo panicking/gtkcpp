@@ -72,7 +72,6 @@ GI_DISABLE_DEPRECATED_WARN_BEGIN
 #include "messageheadersiter.hpp"
 #include "multipart.hpp"
 #include "multipartinputstream.hpp"
-#include "passwordmanager.hpp"
 #include "proxyresolver.hpp"
 #include "proxyresolverdefault.hpp"
 #include "proxyuriresolver.hpp"

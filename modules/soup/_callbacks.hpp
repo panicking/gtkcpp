@@ -17,7 +17,6 @@ class AuthDomainDigest;
 class ClientContext;
 class Logger;
 class Message;
-class PasswordManager;
 class ProxyURIResolver;
 class Server;
 class Session;
@@ -58,8 +57,8 @@ typedef gi::detail::callback<void(Soup::Logger logger, Soup::LoggerLogLevel leve
 typedef gi::detail::callback<void(const std::string & name, const std::string & value), gi::transfer_full_t, gi::transfer_none_t, gi::transfer_none_t> MessageHeadersForeachFunc;
 
 // typedef void (*SoupPasswordManagerCallback) (SoupPasswordManager* password_manager, SoupMessage* msg, SoupAuth* auth, gboolean retrying, gpointer user_data);
-// typedef void (*SoupPasswordManagerCallback) (::SoupPasswordManager* password_manager, ::SoupMessage* msg, ::SoupAuth* auth, gboolean retrying, void* user_data);
-typedef gi::detail::callback<void(Soup::PasswordManager password_manager, Soup::Message msg, Soup::Auth auth, gboolean retrying), gi::transfer_full_t, gi::transfer_none_t, gi::transfer_none_t, gi::transfer_none_t, gi::transfer_none_t> PasswordManagerCallback;
+// typedef void (*SoupPasswordManagerCallback) ( password_manager, ::SoupMessage* msg, ::SoupAuth* auth, gboolean retrying, void* user_data);
+// SKIP; password_manager type  not supported
 
 // typedef void (*SoupProxyURIResolverCallback) (SoupProxyURIResolver* resolver, guint status, SoupURI* proxy_uri, gpointer user_data);
 // typedef void (*SoupProxyURIResolverCallback) (::SoupProxyURIResolver* resolver, guint status, ::SoupURI* proxy_uri, void* user_data);
